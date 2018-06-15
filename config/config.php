@@ -7,7 +7,7 @@
 	// Debbuger helper
 	define ('DEBUG', true);
 	// Default controller for Application
-	define ('DEFAULT_CONTROLLER', 'Home');
+	define ('DEFAULT_CONTROLLER', 'Inicio');
 	// Default layout to be shared
 	define ('DEFAULT_LAYOUT', 'default');
 	// Default site title

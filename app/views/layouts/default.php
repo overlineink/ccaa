@@ -214,88 +214,20 @@
               <div class="header-nav navbar-collapse collapse ">
                   <ul class=" nav navbar-nav">
                       <li class="active">
-                          <a href="javascript:;">Home<i class="fa fa-chevron-down"></i></a>
+                          <a href="<?=PROOT?>">Página Inicial</a>
+                      </li>
+                      <li>
+                          <a href="">Produtos</a>
                           <ul class="sub-menu">
-                              <li><a href="index.html">Home 1</a></li>
-                              <li><a href="index-2.html">Home 2</a></li>
-                              <li><a href="index-3.html">Home 3</a></li>
-                              <li><a href="index-4.html">Home 4</a></li>
-                              <li><a href="index-5.html">Home 5</a></li>
+                            <li><a href="#">Divisórias</a></li>
+                            <li><a href="#">Quiosques</a></li>
+                            <li><a href="#">Roloutes</a></li>
                           </ul>
                       </li>
-                  
                       <li>
-                          <a href="javascript:;">Pages<i class="fa fa-chevron-down"></i></a>
-                          <ul class="sub-menu">
-                              <li>
-                                  <a href="javascript:;">About us</a>
-                                  <ul class="sub-menu">
-                                      <li><a href="about-1.html">About us 1</a></li>
-                                      <li><a href="about-2.html">About us 2</a></li>
-                                  </ul>
-                              </li>
-                              <li>
-                                  <a href="javascript:;">FAQ</a>
-                                  <ul class="sub-menu">
-                                      <li><a href="faq-1.html">FAQ 1</a></li>
-                                      <li><a href="faq-2.html">FAQ 2</a></li>
-                                  </ul>
-                              </li>
-                              <li>
-                                  <a href="career.html">Career</a>
-                              </li>
-                              <li>
-                                  <a href="javascript:;">Portfolio</a>
-                                  <ul class="sub-menu">
-                                      <li><a href="portfolio-1.html">Portfolio 1</a></li>
-                                      <li><a href="portfolio-2.html">Portfolio 2</a></li>
-                                      <li><a href="portfolio-3.html">Portfolio 3</a></li>
-                                      <li><a href="portfolio-detail.html">Portfolio Detail</a></li>
-                                  </ul>
-                              </li>
-                              <li>
-                                  <a href="javascript:;">Our Team</a>
-                                  <ul class="sub-menu">
-                                      <li><a href="our-team.html">Our Team 1</a></li>
-                                      <li><a href="our-team-detail.html">Our Team Detail</a></li>
-                                  </ul>
-                              </li>
-                              <li>
-                                  <a href="javascript:;">Services</a>
-                                  <ul class="sub-menu">
-                                      <li><a href="services-1.html">Services 1</a></li>
-                                      <li><a href="services-2.html">Services 2</a></li>
-                                      <li><a href="services-detail.html">Services Detail</a></li>
-                                  </ul>
-                              </li>
-                              <li>
-                                  <a href="javascript:;">Galley</a>
-                                  <ul class="sub-menu">
-                                      <li><a href="gallery-grid-1.html">Galley Grid 1</a></li>
-                                      <li><a href="gallery-grid-2.html">Galley Grid 2</a></li>
-                                      <li><a href="gallery-grid-3.html">Galley Grid 3</a></li>
-                                  </ul>
-                              </li>
-                              <li>
-                                  <a href="javascript:;">Error</a>
-                                  <ul class="sub-menu">
-                                      <li><a href="error-403.html">Error 403</a></li>
-                                      <li><a href="error-404.html">Error 404</a></li>
-                                      <li><a href="error-500.html">Error 500</a></li>
-                                  </ul>
-                              </li>
-                              <li>
-                                  <a href="javascript:;">Contact us</a>
-                                  <ul class="sub-menu">
-                                      <li><a href="contact-1.html">Contact us 1</a></li>
-                                      <li><a href="contact-2.html">Contact us 2</a></li>
-                                      <li><a href="contact-3.html">Contact us 3</a></li>
-                                  </ul>
-                              </li>
-                          </ul>
-                      </li>
-                      
-                      <li>
+                          <a href="#">Contactos</a>
+                      </li>                      
+                      <!-- <li>
                           <a href="javascript:;">Features<i class="fa fa-chevron-down"></i></a>
                           <ul class="sub-menu">
                               <li>
@@ -318,7 +250,6 @@
                               <li><a href="footer-dark.html">Footer Dark</a></li>
                           </ul>
                       </li>
-                  
                       <li>
                           <a href="javascript:;">Product<i class="fa fa-chevron-down"></i></a>
                           <ul class="sub-menu">
@@ -326,7 +257,6 @@
                               <li><a href="product-detail.html">Product Detail</a></li>
                           </ul>
                       </li>
-                      
                       <li class="submenu-direction">
                           <a href="javascript:;">Blog<i class="fa fa-chevron-down"></i></a>
                           <ul class="sub-menu">
@@ -370,7 +300,6 @@
                               </li>
                           </ul>
                       </li>
-                      
                       <li class="has-mega-menu ">
                           <a href="javascript:;">Shortcodes<i class="fa fa-chevron-down"></i></a>
                           <ul class="mega-menu">
@@ -426,7 +355,7 @@
                                   </ul>
                               </li>
                           </ul>
-                      </li>
+                      </li> -->
                   </ul>
               </div>
           </div>
