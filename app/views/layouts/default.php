@@ -217,7 +217,7 @@
                           <a href="<?=PROOT?>">Página Inicial</a>
                       </li>
                       <li>
-                          <a href="">Produtos</a>
+                          <a href="">Produtos<i class="fa fa-chevron-down"></i></a>
                           <ul class="sub-menu">
                             <li><a href="#">Divisórias</a></li>
                             <li><a href="#">Quiosques</a></li>
@@ -367,40 +367,212 @@
     <div class="page-content">
       <?= $this->content('body') ?>
     </div>
+    <footer class="site-footer footer-dark" style="display: block; height: 1190px;">
+        <!-- FOOTER BLOCKES START -->  
+        <div class="footer-top overlay-wraper">
+            <div class="overlay-main"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">  
+                        <div class="widget widget_about">
+                            <h4 class="widget-title">Quem somos?</h4>
+                            <div class="logo-footer clearfix p-b15">
+                                <a href="<?=PROOT?>"><img src="<?=PROOT?>images/ccaa-logo.png" width="230" height="67" alt="CCAA LOGO"></a>
+                            </div>
+                            <p>CCAA ipsum dolor sit amet, consectetuer adipiscing elit,
+                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore agna aliquam erat .   
+                                wisi enim ad minim veniam, quis tation. sit amet, consec tetuer.
+                                ipsum dolor sit amet, consectetuer adipiscing.ipsum dolor sit .
+                            </p>  
+                        </div>
+                    </div> 
+                    <div class="col-md-3 col-sm-6">
+                        <div class="widget recent-posts-entry-date">
+                            <h4 class="widget-title">Postagens recentes</h4>
+                            <div class="widget-post-bx">
+                                <!-- item start --><div class="bdr-light-blue widget-post clearfix  bdr-b-1 m-b10 p-b10">
+                                    <div class="wt-post-date text-center text-uppercase text-white p-t5">
+                                        <strong>20</strong>
+                                        <span>Mar</span>
+                                    </div>
+                                    <div class="wt-post-info">
+                                        <div class="wt-post-header">
+                                            <h6 class="post-title"><a href="blog-single.html">Blog title first </a></h6>
+                                        </div>
+                                        <div class="wt-post-meta">
+                                            <ul>
+                                                <li class="post-author"><i class="fa fa-user"></i>By Admin</li>
+                                                <li class="post-comment"><i class="fa fa-comments"></i> 28</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div><!-- end item -->
+                            </div>
+                        </div>
+                    </div>      
+                    <div class="col-md-3 col-sm-6">
+                        <div class="widget widget_services">
+                            <h4 class="widget-title">Links Úteis</h4>
+                            <ul>
+                                <li><a href="about-1.html">About</a></li>
+                                <li><a href="faq-1.html">FAQ</a></li>
+                                <li><a href="career.html">Career</a></li>
+                                <li><a href="our-team.html">Our Team</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="gallery-grid-1.html">Gallery</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- NEWSLETTER -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="widget widget_newsletter">
+                            <h4 class="widget-title">Newsletter</h4>
+                            <div class="newsletter-bx">
+                                <form role="search" method="post">
+                                    <div class="input-group">
+                                    <input name="news-letter" class="form-control" placeholder="INSIRA SEU EMAIL" type="text">
+                                    <span class="input-group-btn">
+                                        <button type="submit" class="site-button"><i class="fa fa-paper-plane-o"></i></button>
+                                    </span>
+                                </div>
+                                    </form>
+                            </div>
+                        </div>
+                        <!-- SOCIAL LINKS -->
+                        <div class="widget widget_social_inks">
+                            <h4 class="widget-title">Links Sociais</h4>
+                            <ul class="social-icons social-square social-darkest">
+                                <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
+                                <li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
+                                <li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
+                                <li><a href="javascript:void(0);" class="fa fa-instagram"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="">
+                    <div class="col-md-3 col-sm-6  p-tb20">
+                        <div class="wt-icon-box-wraper left  bdr-1 bdr-gray-dark p-tb15 p-lr10 clearfix">
+                            <div class="icon-md text-primary">
+                                <span class="iconmoon-travel"></span>
+                            </div>
+                            <div class="icon-content">
+                                <h5 class="wt-tilte text-uppercase m-b0">Endereço</h5>
+                                <p>No.123 Chalingt Gates, Supper market New York</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6  p-tb20 ">
+                        <div class="wt-icon-box-wraper left  bdr-1 bdr-gray-dark p-tb15 p-lr10 clearfix ">
+                            <div class="icon-md text-primary">
+                                <span class="iconmoon-smartphone-1"></span>
+                            </div>
+                            <div class="icon-content">
+                                <h5 class="wt-tilte text-uppercase m-b0">Telefone</h5>
+                                <p class="m-b0">(+244) 222 026518</p>
+                                <p>936802620</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 p-tb20">
+                        <div class="wt-icon-box-wraper left  bdr-1 bdr-gray-dark p-tb15 p-lr10 clearfix">
+                            <div class="icon-md text-primary">
+                                <span class="iconmoon-email"></span>
+                            </div>
+                            <div class="icon-content">
+                                <h5 class="wt-tilte text-uppercase m-b0">Email</h5>
+                                <p class="m-b0">info@ccaaccivil.com</p>
+                                <p>support@ccaaccivil.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom overlay-wraper">
+            <div class="overlay-main"></div>
+            <div class="constrot-strip"></div>
+            <div class="container p-t30">
+                <div class="row">
+                    <div class="wt-footer-bot-left">
+                        <span class="copyrights-text">© <?=Date("Y")?> CCAA. Todos os direitos reservados. Projetado por <a href="http://splashink.co">Splash Ink Incorporated Systems</a>.</span>
+                    </div>
+                    <div class="wt-footer-bot-right">
+                        <ul class="copyrights-nav pull-right"> 
+                            <li><a href="javascript:void(0);">Terms  &amp; Condition</a></li>
+                            <li><a href="javascript:void(0);">Privacy Policy</a></li>
+                            <li><a href="contact-1.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
   </div>
+  <div id="Login-form" class="modal fade " role="dialog">
+        <div class="modal-dialog modal-sm">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title text-white">Login Your Account</h4>
+                </div>
+                <div class="modal-body p-a30">
+                    <form id="log-form">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                <input class="form-control" placeholder="Enter Username" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                <input class="form-control" placeholder="Enter email" type="email">
+                            </div>
+                        </div>
+                        <button type="button" class="site-button-secondry text-uppercase btn-block m-b10">Submit</button>
+                        <span class="font-12">Don't have an account? <a href="javascript:;" class="text-primary">Register Here</a></span>
+                    </form>
+                </div>
+                <div class="modal-footer text-center">
+                <div class="text-center">
+                    <img src="<?=PROOT?>images/ccaa-logo.png" style="max-height: 90px;"></div>
+                </div>
+            </div>
+        </div>
+   </div>
+  <button class="scroltop"><span class=" iconmoon-house relative" id="btn-vibrate"></span>Topo</button>
   <!-- optional scripts and pluggins -->
   <?= $this->content('scripts') ?>
 
   <!-- Javascript files -->
-  <script type="text/javascript"  src="<?=PROOT?>js/jquery-1.12.4.min.js"></script><!-- JQUERY.MIN JS -->
-  <script type="text/javascript"  src="<?=PROOT?>js/bootstrap.min.js"></script><!-- BOOTSTRAP.MIN JS -->
+  <script type="text/javascript"  src="<?=PROOT?>js/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript"  src="<?=PROOT?>js/bootstrap.min.js"></script>
 
-  <script type="text/javascript"  src="<?=PROOT?>js/bootstrap-select.min.js"></script><!-- FORM JS -->
-  <script type="text/javascript"  src="<?=PROOT?>js/jquery.bootstrap-touchspin.min.js"></script><!-- FORM JS -->
+  <script type="text/javascript"  src="<?=PROOT?>js/bootstrap-select.min.js"></script>
+  <script type="text/javascript"  src="<?=PROOT?>js/jquery.bootstrap-touchspin.min.js"></script>
 
-  <script type="text/javascript"  src="<?=PROOT?>js/magnific-popup.min.js"></script><!-- MAGNIFIC-POPUP JS -->
+  <script type="text/javascript"  src="<?=PROOT?>js/magnific-popup.min.js"></script>
 
-  <script type="text/javascript"  src="<?=PROOT?>js/waypoints.min.js"></script><!-- WAYPOINTS JS -->
-  <script type="text/javascript"  src="<?=PROOT?>js/counterup.min.js"></script><!-- COUNTERUP JS -->
-  <script type="text/javascript"  src="<?=PROOT?>js/waypoints-sticky.min.js"></script><!-- COUNTERUP JS -->
+  <script type="text/javascript"  src="<?=PROOT?>js/waypoints.min.js"></script>
+  <script type="text/javascript"  src="<?=PROOT?>js/counterup.min.js"></script>
+  <script type="text/javascript"  src="<?=PROOT?>js/waypoints-sticky.min.js"></script>
 
-  <script type="text/javascript" src="<?=PROOT?>js/isotope.pkgd.min.js"></script><!-- MASONRY  -->
+  <script type="text/javascript" src="<?=PROOT?>js/isotope.pkgd.min.js"></script>
 
-  <script type="text/javascript"  src="<?=PROOT?>js/owl.carousel.min.js"></script><!-- OWL  SLIDER  -->
+  <script type="text/javascript"  src="<?=PROOT?>js/owl.carousel.min.js"></script>
 
-  <script type="text/javascript"  src="<?=PROOT?>js/stellar.min.js"></script><!-- PARALLAX BG IMAGE   --> 
-  <script type="text/javascript"  src="<?=PROOT?>js/scrolla.min.js"></script><!-- ON SCROLL CONTENT ANIMTE   -->
+  <script type="text/javascript"  src="<?=PROOT?>js/stellar.min.js"></script> 
+  <script type="text/javascript"  src="<?=PROOT?>js/scrolla.min.js"></script>
 
-  <script type="text/javascript"  src="<?=PROOT?>js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
-  <script type="text/javascript"  src="<?=PROOT?>js/shortcode.js"></script><!-- SHORTCODE FUCTIONS  -->
-  <script type="text/javascript"  src="<?=PROOT?>js/switcher.js"></script><!-- SWITCHER FUCTIONS  -->
+  <script type="text/javascript"  src="<?=PROOT?>js/custom.js"></script>
+  <script type="text/javascript"  src="<?=PROOT?>js/shortcode.js"></script>
+  <script type="text/javascript"  src="<?=PROOT?>js/switcher.js"></script>
 
-
-  <!-- REVOLUTION JS FILES -->
   <script type="text/javascript" src="<?=PROOT?>plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
   <script type="text/javascript" src="<?=PROOT?>plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
 
-  <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->	
   <script type="text/javascript" src="<?=PROOT?>plugins/revolution/revolution/js/extensions/revolution.extension.actions.min.js"></script>
   <script type="text/javascript" src="<?=PROOT?>plugins/revolution/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
   <script type="text/javascript" src="<?=PROOT?>plugins/revolution/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
@@ -411,7 +583,6 @@
   <script type="text/javascript" src="<?=PROOT?>plugins/revolution/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
   <script type="text/javascript" src="<?=PROOT?>plugins/revolution/revolution/js/extensions/revolution.extension.video.min.js"></script>
 
-  <!-- REVOLUTION SLIDER SCRIPT FILES -->
   <script type="text/javascript" src="<?=PROOT?>js/rev-script-4.js"></script>
 
 </body>

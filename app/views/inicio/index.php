@@ -5,7 +5,6 @@
 <div class="main-slider style-two default-banner">
 	<div class="tp-banner-container">
 		<div class="tp-banner" >
-			<!-- START REVOLUTION SLIDER 5.4.1 -->
 			<div id="rev_slider_1014_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="typewriter-effect" data-source="gallery">
 				<div id="rev_slider_1014_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.1">
 					<ul>
