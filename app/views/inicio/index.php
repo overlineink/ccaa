@@ -187,7 +187,7 @@
 										<span class="icon-cell text-primary"><img src="http://thewebmax.com/build/images/icon/home.png" alt=""></span>
 									</div>
 									<div class="icon-content">
-										<h5 class="wt-tilte text-uppercase">Building</h5>
+										<h5 class="wt-tilte text-uppercase">Quiosques</h5>
 										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod .</p>
 									</div>
 								</div>
@@ -198,7 +198,7 @@
 										<span class="icon-cell text-primary"><img src="http://thewebmax.com/build/images/icon/paint-brush.png" alt=""></span>
 									</div>
 									<div class="icon-content">
-										<h5 class="wt-tilte text-uppercase">Renovation</h5>
+										<h5 class="wt-tilte text-uppercase">Acabamentos de Interior</h5>
 										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod .</p>
 									</div>
 								</div>
@@ -209,7 +209,7 @@
 										<span class="icon-cell text-primary"><img src="http://thewebmax.com/build/images/icon/jackhammer.png" alt=""></span>
 									</div>
 									<div class="icon-content">
-										<h5 class="wt-tilte text-uppercase">Digging</h5>
+										<h5 class="wt-tilte text-uppercase">Alvenaria</h5>
 										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod .</p>
 									</div>
 								</div>
@@ -220,7 +220,7 @@
 										<span class="icon-cell text-primary"><img src="http://thewebmax.com/build/images/icon/window.png" alt=""></span>
 									</div>
 									<div class="icon-content">
-										<h5 class="wt-tilte text-uppercase">interior</h5>
+										<h5 class="wt-tilte text-uppercase">Estrutura Metálica</h5>
 										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod .</p>
 									</div>
 								</div>
