@@ -1,3 +1,28 @@
+<?php
+  // Droping data
+  if(isset($_GET["action"])) {  
+        if($_GET["action"] == "delete")  
+        {  
+            foreach($_SESSION["shopping_cart"] as $keys => $values)  
+            {  
+                  if($values["item_id"] == $_GET["id"])  
+                  {  
+                      unset($_SESSION["shopping_cart"][$keys]);  
+                      echo '<script>alert("Item Removed")</script>';  
+                      echo '<script>window.location="index.php"</script>';  
+                  }  
+            }  
+        }  
+  }  
+  // Data
+  $_SESSION["shopping_cart"] = array(
+    ["item_id" => 1, "name" => "Capacete", "price" => 3500.00, "url" => "http://thewebmax.com/build/images/cart/pic-1.jpg", "qtd" => 2],
+    ["item_id" => 2, "name" => "Berbequim", "price" => 45000.00, "url" => "http://thewebmax.com/build/images/cart/pic-2.jpg", "qtd" => 1]
+  );
+  
+  // Counting stored items
+  $_count = count($_SESSION["shopping_cart"], COUNT_NORMAL);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,8 +35,8 @@
     <meta name="description" content="" />
     
     <!-- favicon -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="icon" href="<?=PROOT?>favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="<?=PROOT?>favicon.ico" />
     <title><?=$this->siteTitle()?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -52,8 +77,7 @@
                   <div class="clearfix">                        
                     <div class="wt-topbar-right">
                       <ul class="list-unstyled e-p-bx pull-right">
-                              <li><a href="#" data-toggle="modal" data-target="#Login-form"><i class="fa fa-user"></i>Login</a></li>
-                              <li><a href="#" data-toggle="modal" data-target="#Register-form"><i class="fa fa-sign-in"></i>Register</a></li>
+                              <li><a href="#" data-toggle="modal" data-target="#Login-form"><i class="fa fa-user"></i>Entrar no Sistema</a></li>
                           </ul>
                       </div>
                   </div>
@@ -128,31 +152,7 @@
                         <span class="link-inner">
                             <span class="woo-cart-total"> </span>
                             <span class="woo-cart-count">
-                                <?php
-                                  // Droping data
-                                  if(isset($_GET["action"])) {  
-                                        if($_GET["action"] == "delete")  
-                                        {  
-                                            foreach($_SESSION["shopping_cart"] as $keys => $values)  
-                                            {  
-                                                  if($values["item_id"] == $_GET["id"])  
-                                                  {  
-                                                      unset($_SESSION["shopping_cart"][$keys]);  
-                                                      echo '<script>alert("Item Removed")</script>';  
-                                                      echo '<script>window.location="index.php"</script>';  
-                                                  }  
-                                            }  
-                                        }  
-                                  }  
-                                  // Data
-                                  $_SESSION["shopping_cart"] = array(
-                                    ["item_id" => 1, "name" => "Capacete", "price" => 3500.00, "url" => "http://thewebmax.com/build/images/cart/pic-1.jpg", "qtd" => 2],
-                                    ["item_id" => 2, "name" => "Berbequim", "price" => 45000.00, "url" => "http://thewebmax.com/build/images/cart/pic-2.jpg", "qtd" => 1]
-                                  );
-                                  
-                                  // Counting stored items
-                                  $_count = count($_SESSION["shopping_cart"], COUNT_NORMAL);
-                                ?>
+                                
                                 <span class="shopping-bag wcmenucart-count "> <?=$_count?> </span>
                             </span>
                         </span>
@@ -208,154 +208,34 @@
                   </span>
                 </div>   
               </form>
-            </div>
-              
-              <!-- MAIN Nav -->
+            </div>              
               <div class="header-nav navbar-collapse collapse ">
                   <ul class=" nav navbar-nav">
                       <li class="active">
                           <a href="<?=PROOT?>">Página Inicial</a>
                       </li>
                       <li>
+                          <a href="">Portfolio <i class="fa fa-chevron-down"></i></a>
+                          <ul class="sub-menu">
+                              <li><a href="">Quem Somos</a></li>
+                              <li><a href="">Nossos Serviços</a></li>
+                              <li><a href="">Galeria</a></li>
+                          </ul>
+                      </li>
+                      <li>
                           <a href="">Produtos<i class="fa fa-chevron-down"></i></a>
                           <ul class="sub-menu">
+                            <li><a href="#">Roloutes</a></li>
                             <li><a href="#">Divisórias</a></li>
                             <li><a href="#">Quiosques</a></li>
-                            <li><a href="#">Roloutes</a></li>
                           </ul>
+                      </li>
+                      <li>
+                          <a href="">Notícias</a>
                       </li>
                       <li>
                           <a href="#">Contactos</a>
-                      </li>                      
-                      <!-- <li>
-                          <a href="javascript:;">Features<i class="fa fa-chevron-down"></i></a>
-                          <ul class="sub-menu">
-                              <li>
-                                  <a href="javascript:;">Header</a>
-                                  <ul class="sub-menu">
-                                      <li><a href="header-style-1.html">Header 1</a></li>
-                                      <li><a href="header-style-2.html">Header 2</a></li>
-                                      <li><a href="header-style-3.html">Header 3</a></li>
-                                      <li><a href="header-style-4.html">Header 4</a></li>
-                                      <li><a href="header-style-5.html">Header 5</a></li>
-                                      <li><a href="header-style-6.html">Header 6</a></li>
-                                      <li><a href="header-style-7.html">Header 7</a></li>
-                                      <li><a href="header-style-8.html">Header 8</a></li>
-                                      <li><a href="header-style-9.html">Header 9</a></li>
-                                      <li><a href="header-style-10.html">Header 10</a></li>
-                                  </ul>
-                              </li>
-                              <li><a href="footer-fixed.html">Footer Fixed</a></li>
-                              <li><a href="footer-light.html">Footer Light</a></li>
-                              <li><a href="footer-dark.html">Footer Dark</a></li>
-                          </ul>
                       </li>
-                      <li>
-                          <a href="javascript:;">Product<i class="fa fa-chevron-down"></i></a>
-                          <ul class="sub-menu">
-                              <li><a href="product.html">Product</a></li>
-                              <li><a href="product-detail.html">Product Detail</a></li>
-                          </ul>
-                      </li>
-                      <li class="submenu-direction">
-                          <a href="javascript:;">Blog<i class="fa fa-chevron-down"></i></a>
-                          <ul class="sub-menu">
-                            <li>
-                                  <a href="javascript:;">Media</a>
-                                  <ul class="sub-menu">
-                                      <li><a href="blog-media-list.html">Media list</a></li>
-                                      <li><a href="blog-media-grid.html">Media grid</a></li>
-                                  </ul>
-                              </li>
-                              <li>
-                                  <a href="javascript:;">list</a>
-                                  <ul class="sub-menu">
-                                      <li><a href="blog-half-img.html">Half image</a></li>
-                                      <li><a href="blog-half-img-sidebar.html">Half image sidebar</a></li>
-                                      <li><a href="blog-half-img-left-sidebar.html">Half image sidebar left</a></li>
-                                      <li><a href="blog-large-img.html">Large image</a></li>
-                                      <li><a href="blog-large-img-sidebar.html">Large image sidebar</a></li>
-                                      <li><a href="blog-large-img-left-sidebar.html">Large image sidebar left</a></li>                                                    
-                                  </ul>
-                              </li>
-                              <li>
-                                  <a href="javascript:;">Grid</a>
-                                  <ul class="sub-menu">
-                                      <li><a href="blog-grid-2.html">Grid 2</a></li>
-                                      <li><a href="blog-grid-2-sidebar.html">Grid 2 sidebar</a></li>
-                                      <li><a href="blog-grid-2-sidebar-left.html">Grid 2 sidebar left</a></li>
-                                      <li><a href="blog-grid-3.html">Grid 3</a></li>
-                                      <li><a href="blog-grid-3-sidebar.html">Grid 3 sidebar</a></li>
-                                      <li><a href="blog-grid-3-sidebar-left.html">Grid 3 sidebar left</a></li>
-                                      <li><a href="blog-grid-4.html">Grid 4</a></li>
-                                  </ul>
-                              </li>
-                              <li>
-                                  <a href="javascript:;">Single</a>
-                                  <ul class="sub-menu">
-                                      <li><a href="blog-single.html">Single full</a></li>
-                                      <li><a href="blog-single-left-sidebar.html">Single sidebar</a></li>
-                                      <li><a href="blog-single-sidebar.html">Single sidebar right</a></li>
-                                  </ul>
-                              </li>
-                          </ul>
-                      </li>
-                      <li class="has-mega-menu ">
-                          <a href="javascript:;">Shortcodes<i class="fa fa-chevron-down"></i></a>
-                          <ul class="mega-menu">
-                              <li>
-                                  
-                                  <ul>
-                                      <li><a href="shortcode-animations.html"><i class="fa fa-ravelry"></i> Animations</a></li>
-                                      <li><a href="shortcode-accordians.html"> <i class="fa fa-bars"></i>Accordians</a></li>
-                                      <li><a href="shortcode-alert-box.html"> <i class="fa fa-bell-o"></i>Alert box</a></li>
-                                      <li><a href="shortcode-buttons.html"> <i class="fa fa-toggle-on"></i>Buttons</a></li>
-                                      <li><a href="shortcode-client.html"> <i class="fa fa-group"></i>Clients</a></li>
-                                      <li><a href="shortcode-client-slider.html"> <i class="fa fa-drivers-license-o"></i>Clients slider</a></li>
-                                      <li><a href="shortcode-carousel-sliders.html"> <i class="fa fa-sliders"></i>Carousel sliders</a></li>
-                                  </ul>
-                              </li>
-                  
-                              <li>
-                                  
-                                  <ul>
-                                      <li><a href="shortcode-counters.html"> <i class="fa fa-calculator"></i>Counters</a></li>
-                                      <li><a href="shortcode-dividers.html"> <i class="fa fa-ellipsis-h"></i>Dividers</a></li>
-                                      <li><a href="shortcode-google-map.html"> <i class="fa fa-map-o"></i>Google map</a></li>
-                                      <li><a href="shortcode-icons.html"> <i class="fa fa-ellipsis-h"></i>Icons Shortcodes</a></li>
-                                      <li><a href="shortcode-icon-box.html"> <i class="fa fa-square-o"></i>Icon-box</a></li>
-                                      <li><a href="shortcode-icon-box-styles.html"> <i class="fa fa-square-o"></i>Icon box styles</a></li>
-                                      <li><a href="shortcode-image-box-content.html"> <i class="fa fa-address-card-o"></i>Image box content</a></li>
-                                  </ul>
-                              </li>
-                  
-                              <li>
-                                  
-                                  <ul>
-                                      <li><a href="shortcode-images-effects.html"> <i class="fa fa-photo"></i>Images effects</a></li>
-                                      <li><a href="shortcode-list-group.html"> <i class="fa fa-list-ol"></i>List group</a></li>
-                                      <li><a href="shortcode-modal-popup.html"> <i class="fa fa-window-maximize"></i>Modal popup</a></li>
-                                      <li><a href="shortcode-pagination.html"> <i class="fa fa-terminal"></i>Pagination</a></li>
-                                      <li><a href="shortcode-pricing-table.html"> <i class="fa fa-dollar"></i>Pricing table</a></li>
-                                      <li><a href="shortcode-toggles.html"> <i class="fa fa-plus-square-o"></i>Toggles</a></li>
-                                      <li><a href="shortcode-tooltips.html"> <i class="fa fa-window-maximize"></i>Tooltips</a></li>
-                                  </ul>
-                              </li>
-                              
-                              <li>
-                                  
-                                  <ul>
-                                      <li><a href="shortcode-tabs.html"> <i class="fa fa-th-list"></i>Tabs</a></li>
-                                      <li><a href="shortcode-table.html"> <i class="fa fa-table"></i>Table</a></li>
-                                      <li><a href="shortcode-testimonials.html"> <i class="fa fa-twitch"></i>Testimonials</a></li>
-                                      <li><a href="shortcode-testimonials-grid.html"> <i class="fa fa-twitch"></i>Testimonials grid</a></li>
-                                      <li><a href="shortcode-title-separators.html"> <i class="fa fa-ellipsis-h"></i>Title-separators</a></li>
-                                      <li><a href="shortcode-video.html"> <i class="fa fa-video-camera"></i>Video</a></li>
-                                      <li><a href="shortcode-all-widgets.html"> <i class="fa fa-retweet"></i>Widgets</a></li>
-                                  </ul>
-                              </li>
-                          </ul>
-                      </li> -->
                   </ul>
               </div>
           </div>
@@ -377,12 +257,11 @@
                         <div class="widget widget_about">
                             <h4 class="widget-title">Quem somos?</h4>
                             <div class="logo-footer clearfix p-b15">
-                                <a href="<?=PROOT?>"><img src="<?=PROOT?>images/ccaa-logo.png" width="230" height="67" alt="CCAA LOGO"></a>
+                                <a href="<?=PROOT?>"><img src="<?=PROOT?>images/ccaa-logo-w.png" width="230" height="67" alt="CCAA LOGO"></a>
                             </div>
-                            <p>CCAA ipsum dolor sit amet, consectetuer adipiscing elit,
-                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore agna aliquam erat .   
-                                wisi enim ad minim veniam, quis tation. sit amet, consec tetuer.
-                                ipsum dolor sit amet, consectetuer adipiscing.ipsum dolor sit .
+                            <p>Somos uma empresa de direito angolano, atuando na área de construção civil
+                            especializada em projetar, fabricar diferentes tipos de obras. Desde fabricação de 
+                            estruturas metálicas, quiosques, (...) acabamentos e venda de matérias de construção.
                             </p>  
                         </div>
                     </div> 
@@ -392,17 +271,17 @@
                             <div class="widget-post-bx">
                                 <!-- item start --><div class="bdr-light-blue widget-post clearfix  bdr-b-1 m-b10 p-b10">
                                     <div class="wt-post-date text-center text-uppercase text-white p-t5">
-                                        <strong>20</strong>
-                                        <span>Mar</span>
+                                        <strong><?=date("d")?></strong>
+                                        <span><?=date("M")?></span>
                                     </div>
                                     <div class="wt-post-info">
                                         <div class="wt-post-header">
-                                            <h6 class="post-title"><a href="blog-single.html">Blog title first </a></h6>
+                                            <h6 class="post-title"><a href="<?=PROOT?>">Postagem 1</a></h6>
                                         </div>
                                         <div class="wt-post-meta">
                                             <ul>
-                                                <li class="post-author"><i class="fa fa-user"></i>By Admin</li>
-                                                <li class="post-comment"><i class="fa fa-comments"></i> 28</li>
+                                                <li class="post-author"><i class="fa fa-user"></i>Por CCAA</li>
+                                                <li class="post-comment"><i class="fa fa-comments"></i> 0</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -414,12 +293,11 @@
                         <div class="widget widget_services">
                             <h4 class="widget-title">Links Úteis</h4>
                             <ul>
-                                <li><a href="about-1.html">About</a></li>
-                                <li><a href="faq-1.html">FAQ</a></li>
-                                <li><a href="career.html">Career</a></li>
-                                <li><a href="our-team.html">Our Team</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="gallery-grid-1.html">Gallery</a></li>
+                                <li><a href="#">Quem somos?</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Loja online</a></li>
+                                <li><a href="#">Nossos Serviços</a></li>
+                                <li><a href="#">Galeria</a></li>
                             </ul>
                         </div>
                     </div>
@@ -458,7 +336,7 @@
                             </div>
                             <div class="icon-content">
                                 <h5 class="wt-tilte text-uppercase m-b0">Endereço</h5>
-                                <p>No.123 Chalingt Gates, Supper market New York</p>
+                                <p>Sem endereco de momento</p>
                             </div>
                         </div>
                     </div>
@@ -495,7 +373,7 @@
             <div class="container p-t30">
                 <div class="row">
                     <div class="wt-footer-bot-left">
-                        <span class="copyrights-text">© <?=Date("Y")?> CCAA. Todos os direitos reservados. Projetado por <a href="http://splashink.co">Splash Ink Incorporated Systems</a>.</span>
+                        <span class="copyrights-text">© <?=Date("Y")?> CCAA. Desenvolvido por <a href="http://splashink.co">Splash Ink Incorporated Systems</a>.</span>
                     </div>
                     <div class="wt-footer-bot-right">
                         <ul class="copyrights-nav pull-right"> 
