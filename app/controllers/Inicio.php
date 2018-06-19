@@ -6,6 +6,8 @@
 		}
 
 		public function indexAction() {
+			// Set view title
+			$this->view->setViewTitle('CCAA | Inicio');
 			// Set view to be displayed
 			$this->view->render('inicio/index');
 		}

@@ -230,7 +230,245 @@
 				</div>
 			</div>
 	 </div>
- </div>
+</div>
+<div class="section-full p-t50 p-b50 overlay-wraper bg-parallax" data-stellar-background-ratio="0.5" style="background-image: url('http://thewebmax.com/build/images/background/bg-5.jpg'); background-position: 50% 196.958px;">
+	<div class="overlay-main bg-black opacity-07"></div>
+	<div class="container ">
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-8">
+				<div class="text-right text-white">
+					<h3 class="font-24">Por que escolher-nos?</h3>
+					<h1 class="font-60">VEJA ALGUNS FATOS IMPRESSIONANTES</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a metus pellentesque, scelerisque ex sed, volutpat nisi. Curabitur tortor mi, eleifend ornare lobortis non. Nulla porta purus quis iaculis ultrices. Proin aliquam sem at nibh hendrerit sagittis. Nullam ornare odio eu lacus tincidunt malesuada.</p>
+				</div>
+				</div>
+			<div class="col-md-6"></div>
+			<div class="col-md-2 col-sm-4">
+				<div class="status-marks  text-white m-tb10">
+					<div class="status-value text-right">
+						<span class="counter">1150</span>
+						<i class="fa fa-building font-26 m-l15"></i>
+					</div>
+					<h6 class="text-uppercase text-white text-right">PROJETO REALIZADO</h6>
+				</div>
+			</div>
+			<div class="col-md-2 col-sm-4">
+				<div class="status-marks  text-white m-tb10">
+					<div class="status-value text-right">
+						<span class="counter">5223</span>
+						<i class="fa fa-users font-26 m-l15"></i>
+					</div>
+					<h6 class="text-uppercase text-white text-right">CLIENTES FELIZES</h6>
+				</div>
+			</div>
+			<div class="col-md-2 col-sm-">
+				<div class="status-marks  text-white m-tb10">
+					<div class="status-value text-right">
+						<span class="counter">4522</span>
+						<i class="fa fa-user-plus font-26 m-l15"></i>
+					</div>
+					<h6 class="text-uppercase text-white text-right">TRABALHADORES EMPREGADOS</h6>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="section-full p-t80 p-b50">
+	<div class="container">
+	
+		<!-- TITLE START -->
+		<div class="section-head text-center">
+			<h2 class="text-uppercase">Our Client</h2>
+			<div class="wt-separator-outer">
+				<div class="wt-separator style-square">
+					<span class="separator-left bg-primary"></span>
+					<span class="separator-right bg-primary"></span>
+				</div>
+			</div>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+		</div>
+		<!-- TITLE END -->
+		
+		<!-- IMAGE CAROUSEL START -->
+		<div class="section-content">
+			<div class="owl-carousel client-logo-carousel owl-loaded owl-drag">
+			
+				<!-- COLUMNS 1 --> 
+				
+				<!-- COLUMNS 2 --> 
+				
+				<!-- COLUMNS 3 --> 
+				
+				<!-- COLUMNS 4 --> 
+				
+				<!-- COLUMNS 5 --> 
+				
+				<!-- COLUMNS 6 --> 
+				
+				<!-- COLUMNS 7 --> 
+				
+				<!-- COLUMNS 8 --> 
+				
+				<!-- COLUMNS 9 --> 
+				
+				<!-- COLUMNS 10 --> 
+				
+				<!-- COLUMNS 11 --> 
+				
+				<!-- COLUMNS 12 --> 
+										
+			
+			<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1404px, 0px, 0px); transition: all 0s ease 0s; width: 5616px;"><div class="owl-item cloned" style="width: 204px; margin-right: 30px;"><div class="item">
+					<div class="ow-client-logo">
+						<div class="client-logo wt-img-effect on-color">
+							<a href="#"><img src="http://thewebmax.com/build/images/client-logo/logo1.png" alt=""></a>
+						</div>
+					</div>
+				</div></div><div class="owl-item cloned" style="width: 204px; margin-right: 30px;"><div class="item">
+					<div class="ow-client-logo">
+						<div class="client-logo wt-img-effect on-color">
+							<a href="#"><img src="http://thewebmax.com/build/images/client-logo/logo2.png" alt=""></a>
+						</div>
+					</div>
+				</div></div><div class="owl-item cloned" style="width: 204px; margin-right: 30px;"><div class="item">
+					<div class="ow-client-logo">
+						<div class="client-logo wt-img-effect on-color">
+							<a href="#"><img src="http://thewebmax.com/build/images/client-logo/logo3.png" alt=""></a>
+						</div>
+					</div>
+				</div></div><div class="owl-item cloned" style="width: 204px; margin-right: 30px;"><div class="item">
+					<div class="ow-client-logo">
+						<div class="client-logo wt-img-effect on-color">
+							<a href="#"><img src="http://thewebmax.com/build/images/client-logo/logo4.png" alt=""></a>
+						</div>
+					</div>
+				</div></div><div class="owl-item cloned" style="width: 204px; margin-right: 30px;"><div class="item">
+					<div class="ow-client-logo">
+						<div class="client-logo wt-img-effect on-color">
+							<a href="#"><img src="http://thewebmax.com/build/images/client-logo/logo5.png" alt=""></a>
+						</div>
+					</div>
+				</div></div><div class="owl-item cloned" style="width: 204px; margin-right: 30px;"><div class="item">
+					<div class="ow-client-logo">
+						<div class="client-logo wt-img-effect on-color">
+							<a href="#"><img src="http://thewebmax.com/build/images/client-logo/logo6.png" alt=""></a>
+						</div>
+					</div>
+				</div></div><div class="owl-item active" style="width: 204px; margin-right: 30px;"><div class="item">
+					<div class="ow-client-logo">
+						<div class="client-logo wt-img-effect on-color">
+							<a href="#"><img src="http://thewebmax.com/build/images/client-logo/logo1.png" alt=""></a>
+						</div>
+					</div>
+				</div></div><div class="owl-item active" style="width: 204px; margin-right: 30px;"><div class="item">
+					<div class="ow-client-logo">
+						<div class="client-logo wt-img-effect on-color">
+							<a href="#"><img src="http://thewebmax.com/build/images/client-logo/logo2.png" alt=""></a>
+						</div>
+					</div>
+				</div></div><div class="owl-item active" style="width: 204px; margin-right: 30px;"><div class="item">
+					<div class="ow-client-logo">
+						<div class="client-logo wt-img-effect on-color">
+							<a href="#"><img src="http://thewebmax.com/build/images/client-logo/logo3.png" alt=""></a>
+						</div>
+					</div>
+				</div></div><div class="owl-item active" style="width: 204px; margin-right: 30px;"><div class="item">
+					<div class="ow-client-logo">
+						<div class="client-logo wt-img-effect on-color">
+							<a href="#"><img src="http://thewebmax.com/build/images/client-logo/logo4.png" alt=""></a>
+						</div>
+					</div>
+				</div></div><div class="owl-item active" style="width: 204px; margin-right: 30px;"><div class="item">
+					<div class="ow-client-logo">
+						<div class="client-logo wt-img-effect on-color">
+							<a href="#"><img src="http://thewebmax.com/build/images/client-logo/logo5.png" alt=""></a>
+						</div>
+					</div>
+				</div></div><div class="owl-item" style="width: 204px; margin-right: 30px;"><div class="item">
+					<div class="ow-client-logo">
+						<div class="client-logo wt-img-effect on-color">
+							<a href="#"><img src="http://thewebmax.com/build/images/client-logo/logo6.png" alt=""></a>
+						</div>
+					</div>
+				</div></div><div class="owl-item" style="width: 204px; margin-right: 30px;"><div class="item">
+					<div class="ow-client-logo">
+						<div class="client-logo wt-img-effect on-color">
+							<a href="#"><img src="http://thewebmax.com/build/images/client-logo/logo1.png" alt=""></a>
+						</div>
+					</div>
+				</div></div><div class="owl-item" style="width: 204px; margin-right: 30px;"><div class="item">
+					<div class="ow-client-logo">
+						<div class="client-logo wt-img-effect on-color">
+							<a href="#"><img src="http://thewebmax.com/build/images/client-logo/logo2.png" alt=""></a>
+						</div>
+					</div>
+				</div></div><div class="owl-item" style="width: 204px; margin-right: 30px;"><div class="item">
+					<div class="ow-client-logo">
+						<div class="client-logo wt-img-effect on-color">
+							<a href="#"><img src="http://thewebmax.com/build/images/client-logo/logo3.png" alt=""></a>
+						</div>
+					</div>
+				</div></div><div class="owl-item" style="width: 204px; margin-right: 30px;"><div class="item">
+					<div class="ow-client-logo">
+						<div class="client-logo wt-img-effect on-color">
+							<a href="#"><img src="http://thewebmax.com/build/images/client-logo/logo4.png" alt=""></a>
+						</div>
+					</div>
+				</div></div><div class="owl-item" style="width: 204px; margin-right: 30px;"><div class="item">
+					<div class="ow-client-logo">
+						<div class="client-logo wt-img-effect on-color">
+							<a href="#"><img src="http://thewebmax.com/build/images/client-logo/logo5.png" alt=""></a>
+						</div>
+					</div>
+				</div></div><div class="owl-item" style="width: 204px; margin-right: 30px;"><div class="item">
+					<div class="ow-client-logo">
+						<div class="client-logo wt-img-effect on-color">
+							<a href="#"><img src="http://thewebmax.com/build/images/client-logo/logo6.png" alt=""></a>
+						</div>
+					</div>
+				</div></div><div class="owl-item cloned" style="width: 204px; margin-right: 30px;"><div class="item">
+					<div class="ow-client-logo">
+						<div class="client-logo wt-img-effect on-color">
+							<a href="#"><img src="http://thewebmax.com/build/images/client-logo/logo1.png" alt=""></a>
+						</div>
+					</div>
+				</div></div><div class="owl-item cloned" style="width: 204px; margin-right: 30px;"><div class="item">
+					<div class="ow-client-logo">
+						<div class="client-logo wt-img-effect on-color">
+							<a href="#"><img src="http://thewebmax.com/build/images/client-logo/logo2.png" alt=""></a>
+						</div>
+					</div>
+				</div></div><div class="owl-item cloned" style="width: 204px; margin-right: 30px;"><div class="item">
+					<div class="ow-client-logo">
+						<div class="client-logo wt-img-effect on-color">
+							<a href="#"><img src="http://thewebmax.com/build/images/client-logo/logo3.png" alt=""></a>
+						</div>
+					</div>
+				</div></div><div class="owl-item cloned" style="width: 204px; margin-right: 30px;"><div class="item">
+					<div class="ow-client-logo">
+						<div class="client-logo wt-img-effect on-color">
+							<a href="#"><img src="http://thewebmax.com/build/images/client-logo/logo4.png" alt=""></a>
+						</div>
+					</div>
+				</div></div><div class="owl-item cloned" style="width: 204px; margin-right: 30px;"><div class="item">
+					<div class="ow-client-logo">
+						<div class="client-logo wt-img-effect on-color">
+							<a href="#"><img src="http://thewebmax.com/build/images/client-logo/logo5.png" alt=""></a>
+						</div>
+					</div>
+				</div></div><div class="owl-item cloned" style="width: 204px; margin-right: 30px;"><div class="item">
+					<div class="ow-client-logo">
+						<div class="client-logo wt-img-effect on-color">
+							<a href="#"><img src="http://thewebmax.com/build/images/client-logo/logo6.png" alt=""></a>
+						</div>
+					</div>
+				</div></div></div></div><div class="owl-nav disabled"><div class="owl-prev">prev</div><div class="owl-next">next</div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+		</div>
+		<!-- IMAGE CAROUSEL START -->
+	</div>
+
+</div>
 <?php $this->end(); ?>
 
 <?php $this->start('scripts'); ?>
