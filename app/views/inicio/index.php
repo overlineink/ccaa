@@ -65,7 +65,7 @@
 							font-weight: 700; 
 							color: rgba(255, 255, 255, 1.00);
 							border-width:0px;">
-							<span class="text-uppercase" style="font-family:'Roboto' ;"><span class="text-primary">Nós construímos </span> O Seu sonho</span>
+							<span class="text-uppercase" style="font-family:'Roboto' ;"><span class="text-primary">Construímos </span>Sonhos</span>
 							</div>
 						
 							<div class="tp-caption  tp-resizeme" 
