@@ -178,7 +178,7 @@
 							<div class="col-md-6 col-sm-6 m-b30">
 								<div class="wt-icon-box-wraper bx-style-1 p-a30 center bg-white">
 									<div class="icon-lg text-primary m-b20">
-										<span class="icon-cell text-primary"><img src="http://thewebmax.com/build/images/icon/home.png" alt=""></span>
+										<span class="icon-cell text-primary"><img src="http://thewebmax.com/build/images/icon/engineer.png" alt=""></span>
 									</div>
 									<div class="icon-content">
 										<h5 class="wt-tilte text-uppercase">Quiosques</h5>
@@ -200,7 +200,7 @@
 							<div class="col-md-6 col-sm-6 m-b30">
 								<div class="wt-icon-box-wraper bx-style-1 p-a30 center bg-white">
 									<div class="icon-lg text-primary  m-b20">
-										<span class="icon-cell text-primary"><img src="http://thewebmax.com/build/images/icon/jackhammer.png" alt=""></span>
+										<span class="icon-cell text-primary"><img src="http://thewebmax.com/build/images/icon/brickwall.png" alt=""></span>
 									</div>
 									<div class="icon-content">
 										<h5 class="wt-tilte text-uppercase">Alvenaria</h5>
@@ -211,7 +211,7 @@
 							<div class="col-md-6 col-sm-6 m-b30">
 								<div class="wt-icon-box-wraper bx-style-1 p-a30 center bg-white">
 									<div class="icon-lg text-primary m-b20">
-										<span class="icon-cell text-primary"><img src="http://thewebmax.com/build/images/icon/window.png" alt=""></span>
+										<span class="icon-cell text-primary"><img src="http://thewebmax.com/build/images/icon/helmet.png" alt=""></span>
 									</div>
 									<div class="icon-content">
 										<h5 class="wt-tilte text-uppercase">Estrutura Metálica</h5>
@@ -227,7 +227,7 @@
 </div>
 
 <!-- Why choose us? -->
-<div class="section-full p-t50 p-b50 overlay-wraper bg-parallax" data-stellar-background-ratio="0.5" style="background-image: url('http://thewebmax.com/build/images/background/bg-5.jpg'); background-position: 50% 196.958px;">
+<div class="section-full p-t50 p-b50 overlay-wraper" style="background-image: url(<?=PROOT?>images/background/bg-5.jpg); background-position: 50% 0px;">
 	<div class="overlay-main bg-black opacity-07"></div>
 	<div class="container ">
 		<div class="row">
