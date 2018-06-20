@@ -70,20 +70,31 @@
 </head>
 <body id="bg">
 	<div class="page-wraper">        	
-    <header class="site-header header-style-8">
-      <div class="top-bar bg-primary">
-          <div class="container">
-              <div class="row">
-                  <div class="clearfix">                        
-                    <div class="wt-topbar-right">
-                      <ul class="list-unstyled e-p-bx pull-right">
-                              <li><a href="#"><i class="fa fa-user"></i>Entrar no Sistema</a></li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
+        <header class="site-header header-style-8">
+            <div class="top-bar bg-primary">
+                <div class="container">
+                    <div class="row">
+                        <div class="clearfix">                        
+                            <div class="wt-topbar-left">
+                                <ul class="list-unstyled e-p-bx pull-right">
+                                    <li><a href="#"><i class="fa fa-user"></i>Entrar no Sistema</a></li>
+                                </ul>
+                            </div>
+                            <div class="wt-topbar-right clearfix">
+                        	<ul class="social-bx list-inline pull-right">
+                                <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
+                                <li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
+                                <li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
+                                <li><a href="javascript:void(0);" class="fa fa-rss"></a></li>
+                                <li><a href="javascript:void(0);" class="fa fa-youtube"></a></li>
+                                <li><a href="javascript:void(0);" class="fa fa-instagram"></a></li>
+                            </ul>
+                            
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
       <!-- header middle -->
       <div class="header-middle bg-white">
         <div class="container">

@@ -283,10 +283,92 @@
 					<span class="separator-right bg-primary"></span>
 				</div>
 			</div>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>			
+			<div class="client-grid">
+				<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 col-xs-100pc col-xs-12">
+					<a href="#" class="wt-img-effect client-logo-media client-logo-media on-color">
+						<img src="http://thewebmax.com/build/images/client-logo/logo1.png" alt=""> 
+					</a>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 col-xs-100pc col-xs-12">
+					<a href="#" class="wt-img-effect client-logo-media on-color">
+						<img src="http://thewebmax.com/build/images/client-logo/logo2.png" alt=""> 
+					</a>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 col-xs-100pc col-xs-12">
+					<a href="#" class="wt-img-effect client-logo-media on-color">
+						<img src="http://thewebmax.com/build/images/client-logo/logo3.png" alt=""> 
+					</a>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-4  col-xs-6 col-xs-100pc col-xs-12">
+					<a href="#" class="wt-img-effect client-logo-media on-color">
+						<img src="http://thewebmax.com/build/images/client-logo/logo4.png" alt=""> 
+					</a>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 col-xs-100pc col-xs-12">
+					<a href="#" class="wt-img-effect client-logo-media on-color">
+						<img src="http://thewebmax.com/build/images/client-logo/logo5.png" alt=""> 
+					</a>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 col-xs-100pc col-xs-12">
+					<a href="#" class="wt-img-effect client-logo-media on-color">
+						<img src="http://thewebmax.com/build/images/client-logo/logo6.png" alt=""> 
+					</a>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 col-xs-100pc col-xs-12">
+					<a href="#" class="wt-img-effect client-logo-media on-color">
+						<img src="http://thewebmax.com/build/images/client-logo/logo7.png" alt=""> 
+					</a>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 col-xs-100pc col-xs-12">
+					<a href="#" class="wt-img-effect client-logo-media on-color">
+						<img src="http://thewebmax.com/build/images/client-logo/logo8.png" alt=""> 
+					</a>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-4  col-xs-6 col-xs-100pc col-xs-12">
+					<a href="#" class="wt-img-effect client-logo-media on-color">
+						<img src="http://thewebmax.com/build/images/client-logo/logo9.png" alt=""> 
+					</a>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 col-xs-100pc col-xs-12">
+					<a href="#" class="wt-img-effect client-logo-media on-color">
+						<img src="http://thewebmax.com/build/images/client-logo/logo10.png" alt=""> 
+					</a>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 col-xs-100pc col-xs-12">
+					<a href="#" class="wt-img-effect client-logo-media on-color">
+						<img src="http://thewebmax.com/build/images/client-logo/logo11.png" alt=""> 
+					</a>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 col-xs-100pc col-xs-12">
+					<a href="#" class="wt-img-effect client-logo-media on-color">
+						<img src="http://thewebmax.com/build/images/client-logo/logo12.png" alt=""> 
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
+</div>
 
+<!-- Single quote -->
+<div class="call-to-action-wrap bg-primary bg-repeat" style="background-image:url(http://thewebmax.com/build/images/background/bg-4.png);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-8">
+                <div class="call-to-action-left p-tb20 p-r50">
+                    <h4 class="text-uppercase m-b10">Estamos prontos para construir o seu sonho, conte-nos mais sobre o seu projeto</h4>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="call-to-action-right p-tb30">
+                    <a href="#" class="site-button-secondry text-uppercase font-weight-600">
+                        Contacte-nos <i class="fa fa-angle-double-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+     </div>
 </div>
 <?php $this->end(); ?>
 
