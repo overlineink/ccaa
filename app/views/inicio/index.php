@@ -276,7 +276,7 @@
 	<div class="container">
 	    <!-- Our clients -->
 		<div class="section-head text-center">
-			<h2 class="text-uppercase">Nossos Clientes</h2>
+			<h2 class="text-uppercase">Nossos Melhores Clientes</h2>
 			<div class="wt-separator-outer">
 				<div class="wt-separator style-square">
 					<span class="separator-left bg-primary"></span>
