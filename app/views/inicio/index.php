@@ -154,7 +154,7 @@
 </div>
 
 <!-- Our services -->
-<div class="section-full bg-white p-t80 p-b50 scale-bg-top scale-bg-bottom">
+<div class="section-full bg-white p-t80 p-b50 scale-bg-top scale-bg-bottom" style="margin-top: -20px;">
 	<div class="container">
 			<div class="section-head text-center">
 				<h2 class="text-uppercase">Nossos Serviços</h2>
@@ -272,7 +272,7 @@
 </div>
 
 <!-- Our clients -->
-<div class="section-full p-t80 p-b50">
+<div class="section-full p-t80 p-b50" style="margin-bottom: -10px;">
 	<div class="container">
 	    <!-- Our clients -->
 		<div class="section-head text-center">

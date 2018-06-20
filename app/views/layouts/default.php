@@ -85,8 +85,6 @@
                                 <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
                                 <li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
                                 <li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
-                                <li><a href="javascript:void(0);" class="fa fa-rss"></a></li>
-                                <li><a href="javascript:void(0);" class="fa fa-youtube"></a></li>
                                 <li><a href="javascript:void(0);" class="fa fa-instagram"></a></li>
                             </ul>
                             
@@ -100,7 +98,7 @@
         <div class="container">
           <div class="logo-header">
             <a href="<?=PROOT?>">
-              <img src="<?=PROOT?>images/ccaa-logo.png" width="216" height="37" alt="CCAA-LOGO" />
+              <img src="<?=PROOT?>images/ccaa-logo.png" width="216" height="37" alt="CCAA-LOGO" style="margin-top: -10px;"/>
             </a>
           </div>
           <div class="header-info">
