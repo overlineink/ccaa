@@ -115,7 +115,7 @@ ol.list-num-count>li::before,
 .site-button:hover,
 .site-button:focus,
 .site-button:active {
-	background-color: #DB9800;
+	background-color: rgb(196, 154, 58);
 }
 
 

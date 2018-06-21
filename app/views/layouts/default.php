@@ -8,16 +8,18 @@
                   if($values["item_id"] == $_GET["id"])  
                   {  
                       unset($_SESSION["shopping_cart"][$keys]);  
-                      echo '<script>alert("Item Removed")</script>';  
-                      echo '<script>window.location="index.php"</script>';  
+                      echo '<script>alert("Item Removido")</script>';  
+                      echo '<script>window.location="'. PROOT .'"</script>';  
                   }  
             }  
         }  
   }  
   // Data
   $_SESSION["shopping_cart"] = array(
-    ["item_id" => 1, "name" => "Capacete", "price" => 3500.00, "url" => "http://thewebmax.com/build/images/cart/pic-1.jpg", "qtd" => 2],
-    ["item_id" => 2, "name" => "Berbequim", "price" => 45000.00, "url" => "http://thewebmax.com/build/images/cart/pic-2.jpg", "qtd" => 1]
+    ["item_id" => 1, "name" => "Capacete DQ", "price" => 3500.00, "url" => "http://thewebmax.com/build/images/cart/pic-1.jpg", "qtd" => 2],
+    ["item_id" => 2, "name" => "Berbequim", "price" => 45000.00, "url" => "http://thewebmax.com/build/images/cart/pic-2.jpg", "qtd" => 1],
+    ["item_id" => 3, "name" => "Capacete", "price" => 2000.00, "url" => "http://thewebmax.com/build/images/cart/pic-1.jpg", "qtd" => 12],
+    ["item_id" => 4, "name" => "Berbequim ACL", "price" => 15000.00, "url" => "http://thewebmax.com/build/images/cart/pic-2.jpg", "qtd" => 8]
   );
   
   // Counting stored items
@@ -82,10 +84,8 @@
                             </div>
                             <div class="wt-topbar-right clearfix">
                         	<ul class="social-bx list-inline pull-right">
-                                <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
-                                <li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
-                                <li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
-                                <li><a href="javascript:void(0);" class="fa fa-instagram"></a></li>
+                                <li><a href="https://www.facebook.com/ccaconstrucaocivil/" class="fa fa-facebook"></a></li>
+                                <li><a href="https://www.instagram.com/ccaa.construcaocivil/" class="fa fa-instagram"></a></li>
                             </ul>
                             
                         </div>
@@ -109,8 +109,8 @@
                     <span class="icon-cell  text-primary"><i class="iconmoon-travel"></i></span>
                   </div>
                   <div class="icon-content">
-                    <strong>Nossa localização </strong>
-                    <span>Sec 3, Panguila, Luanda-AO</span>
+                    <strong>Localização </strong>
+                    <span>Panguila Velha, Bengo-AO</span>
                   </div>
                 </div>
               </li>
@@ -187,10 +187,14 @@
                             </div>
                             <div class="nav-cart-title p-tb10 p-lr15 clearfix">
                                 <?php // Calculate total
-                                $_total = 0;
-                                for ($x = 0; $x < count($_SESSION["shopping_cart"]); $x++) {
-                                    $_total = $_total + ($_SESSION["shopping_cart"][$x]["price"] * $_SESSION["shopping_cart"][$x]["qtd"]);
-                                    $_SESSION['total'] = number_format($_total, 2);
+                                if (!isset($_SESSION["shopping_cart"])) {
+                                    $_SESSION['total'] = 0;
+                                } else {
+                                    $_total = 0;
+                                    for ($x = 0; $x < count($_SESSION["shopping_cart"]); $x++) {
+                                        $_total = $_total + ($_SESSION["shopping_cart"][$x]["price"] * $_SESSION["shopping_cart"][$x]["qtd"]);
+                                        $_SESSION['total'] = number_format($_total, 2);
+                                    }
                                 }
                                 ?>
                                 <h4  class="pull-left m-a0">Subtotal:</h4>
@@ -329,10 +333,8 @@
                         <div class="widget widget_social_inks">
                             <h4 class="widget-title">Links Sociais</h4>
                             <ul class="social-icons social-square social-darkest">
-                                <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
-                                <li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
-                                <li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
-                                <li><a href="javascript:void(0);" class="fa fa-instagram"></a></li>
+                                <li><a href="https://www.facebook.com/ccaconstrucaocivil/" class="fa fa-facebook"></a></li>
+                                <li><a href="https://www.instagram.com/ccaa.construcaocivil/" class="fa fa-instagram"></a></li>
                             </ul>
                         </div>
                     </div>
@@ -345,7 +347,7 @@
                             </div>
                             <div class="icon-content">
                                 <h5 class="wt-tilte text-uppercase m-b0">Endereço</h5>
-                                <p>Sem endereco de momento</p>
+                                <p>Panguila Velha, Junto a Escola Primária, Bengo-AO</p>
                             </div>
                         </div>
                     </div>
@@ -356,8 +358,8 @@
                             </div>
                             <div class="icon-content">
                                 <h5 class="wt-tilte text-uppercase m-b0">Telefone</h5>
-                                <p class="m-b0">(+244) 222 026518</p>
-                                <p>936802620</p>
+                                <p class="m-b0"><a href="tel://+244222026518">(+244) 222 026518</a></p>
+                                <p><a href="tel://936802620">(+244) 936 802 620</a></p>
                             </div>
                         </div>
                     </div>
@@ -368,8 +370,8 @@
                             </div>
                             <div class="icon-content">
                                 <h5 class="wt-tilte text-uppercase m-b0">Email</h5>
-                                <p class="m-b0">info@ccaaccivil.com</p>
-                                <p>support@ccaaccivil.com</p>
+                                <p class="m-b0"><a href="mailto:info@ccaaccivil.com">info@ccaaccivil.com</a></p>
+                                <p><a href="mailto:support@ccaaccivil.com">support@ccaaccivil.com</a></p>
                             </div>
                         </div>
                     </div>
@@ -386,9 +388,9 @@
                     </div>
                     <div class="wt-footer-bot-right">
                         <ul class="copyrights-nav pull-right"> 
-                            <li><a href="javascript:void(0);">Terms  &amp; Condition</a></li>
-                            <li><a href="javascript:void(0);">Privacy Policy</a></li>
-                            <li><a href="contact-1.html">Contact Us</a></li>
+                            <li><a href="#">Terms  &amp; Condition</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
