@@ -71,88 +71,50 @@
     <?= $this->content('head') ?>
 </head>
 <body id="bg">
-	<div class="page-wraper">        	
-        <header class="site-header header-style-8">
-            <div class="top-bar bg-primary">
+    <div class="page-wraper">
+
+        <!-- HEADER START -->
+        <header class="site-header header-style-1 ">
+        
+            <div class="top-bar bg-secondry">
                 <div class="container">
                     <div class="row">
-                        <div class="clearfix">                        
-                            <div class="wt-topbar-left">
-                                <ul class="list-unstyled e-p-bx pull-left">
-                                    <li><a href="#"><i class="fa fa-user"></i>Entrar no Sistema</a></li>
-                                </ul>
-                            </div>
-                            <div class="wt-topbar-right">
-                                <ul class="list-unstyled e-p-bx pull-right">
-                                    <li><a href="https://www.facebook.com/ccaconstrucaocivil/" class="fa fa-facebook"></a></li>
-                                    <li><a href="https://www.instagram.com/ccaa.construcaocivil/" class="fa fa-instagram"></a></li>
-                                    <li><a href="https://www.twitter.com/ccaa.construcaocivil/" class="fa fa-twitter"></a></li>
-                                </ul>
-                            </div>
+                        <div class="wt-topbar-right clearfix">
+                            <ul class="social-bx list-inline pull-right">
+                                <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
+                                <li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
+                                <li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
+                                <li><a href="javascript:void(0);" class="fa fa-rss"></a></li>
+                                <li><a href="javascript:void(0);" class="fa fa-youtube"></a></li>
+                                <li><a href="javascript:void(0);" class="fa fa-instagram"></a></li>
+                            </ul>
+                            <ul class="list-unstyled e-p-bx pull-right">
+                                <li><i class="fa fa-envelope"></i>mail@thewebmax.com</li>
+                                <li><i class="fa fa-phone"></i>(654) 321-7654</li>
+                            </ul>
+                            
                         </div>
                     </div>
                 </div>
             </div>
-      <!-- header middle -->
-      <div class="header-middle bg-white">
-        <div class="container">
-          <div class="logo-header">
-            <a href="<?=PROOT?>">
-              <img src="<?=PROOT?>images/ccaa-logo.png" width="216" height="37" alt="CCAA-LOGO" style="margin-top: -10px;"/>
-            </a>
-          </div>
-          <div class="header-info">
-            <ul>
-              <li>
-                <div>
-                  <div class="icon-sm">
-                    <span class="icon-cell  text-primary"><i class="iconmoon-travel"></i></span>
-                  </div>
-                  <div class="icon-content">
-                    <strong>Localização </strong>
-                    <span>Panguila Velha, Bengo-AO</span>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div>
-                  <div class="icon-sm">
-                    <span class="icon-cell  text-primary"><i class="iconmoon-smartphone-1"></i></span>
-                  </div>
-                  <div class="icon-content">
-                    <strong>Número de telefone</strong>
-                    <span>(+244) 222 026518</span>
-                  </div>
-                </div>
-              </li>
-              <li class="btn-col-last">
-                <div>
-                  <div class="icon-sm">
-                    <span class="icon-cell  text-primary"><i class="iconmoon-clock"></i></span>
-                  </div>
-                  <div class="icon-content">
-                    <strong>Tempo de abertura</strong>
-                    <span>Seg - Sex: 07:30 - 15:00 </span>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- sticky header -->
-      <div class="sticky-header main-bar-wraper">
-        <div class="main-bar header-botton nav-bg-secondry">
-          <div class="container">
-            <!-- Toggle Button -->
-            <button data-target=".header-nav" data-toggle="collapse" type="button" class="navbar-toggle collapsed">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <!-- Extra Nav -->
-            <div class="extra-nav">
+            
+            <div class="sticky-header main-bar-wraper">
+                <div class="main-bar bg-white">
+                    <div class="container">
+                        <div class="logo-header">
+                            <a href="index.html">
+                                <img src="<?=PROOT?>images/ccaa-logo.png" width="171" height="49" alt="CCAA-LOGO" style="margin-top: -10px;" />
+                            </a>
+                        </div>
+                        <!-- NAV Toggle Button -->
+                        <button data-target=".header-nav" data-toggle="collapse" type="button" class="navbar-toggle collapsed">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- ETRA Nav -->
+                        <div class="extra-nav">
                 <div class="extra-cell">
                     <a href="#search" class="site-search-btn"><i class="fa fa-search"></i></a>
                 </div>
@@ -251,15 +213,17 @@
                     </li>
                 </ul>
             </div>
-          </div>
-        </div>
-      </div>            
-        
-    </header>    
+                    </div>
+                </div>
+            </div>
+            
+        </header>
+        <!-- HEADER END -->
 
-    <div class="page-content">
-      <?= $this->content('body') ?>
+        <!-- Body content -->
+        <?= $this->content('body') ?>
     </div>
+    <!-- Footer -->
     <footer class="site-footer footer-dark" style="display: block; height: 1190px;">
         <div class="footer-top overlay-wraper">
             <div class="overlay-main"></div>
@@ -397,51 +361,47 @@
             </div>
         </div>
     </footer>
-  </div>
-  <button class="scroltop"><span class=" iconmoon-house relative" id="btn-vibrate"></span>Topo</button>
-  <!-- optional scripts and pluggins -->
-  <?= $this->content('scripts') ?>
 
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCz6xX2nI6cMkePba_DHQcs0MkR7m2IuvE&callback=initMap"  type="text/javascript"></script>
-  <script type="text/javascript"  src="<?=PROOT?>js/map.script.js"></script>
-  <!-- Javascript files -->
-  <script type="text/javascript"  src="<?=PROOT?>js/jquery-1.12.4.min.js"></script>
-  <script type="text/javascript"  src="<?=PROOT?>js/bootstrap.min.js"></script>
+    <!-- Plugins and Scripts -->
+    <?= $this->content('scripts') ?>
 
-  <script type="text/javascript"  src="<?=PROOT?>js/bootstrap-select.min.js"></script>
-  <script type="text/javascript"  src="<?=PROOT?>js/jquery.bootstrap-touchspin.min.js"></script>
+    <!-- Javascript files -->
+    <script type="text/javascript"  src="<?=PROOT?>js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript"  src="<?=PROOT?>js/bootstrap.min.js"></script>
 
-  <script type="text/javascript"  src="<?=PROOT?>js/magnific-popup.min.js"></script>
+    <script type="text/javascript"  src="<?=PROOT?>js/bootstrap-select.min.js"></script>
+    <script type="text/javascript"  src="<?=PROOT?>js/jquery.bootstrap-touchspin.min.js"></script>
 
-  <script type="text/javascript"  src="<?=PROOT?>js/waypoints.min.js"></script>
-  <script type="text/javascript"  src="<?=PROOT?>js/counterup.min.js"></script>
-  <script type="text/javascript"  src="<?=PROOT?>js/waypoints-sticky.min.js"></script>
+    <script type="text/javascript"  src="<?=PROOT?>js/magnific-popup.min.js"></script>
 
-  <script type="text/javascript" src="<?=PROOT?>js/isotope.pkgd.min.js"></script>
+    <script type="text/javascript"  src="<?=PROOT?>js/waypoints.min.js"></script>
+    <script type="text/javascript"  src="<?=PROOT?>js/counterup.min.js"></script>
+    <script type="text/javascript"  src="<?=PROOT?>js/waypoints-sticky.min.js"></script>
 
-  <script type="text/javascript"  src="<?=PROOT?>js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="<?=PROOT?>js/isotope.pkgd.min.js"></script>
 
-  <script type="text/javascript"  src="<?=PROOT?>js/stellar.min.js"></script> 
-  <script type="text/javascript"  src="<?=PROOT?>js/scrolla.min.js"></script>
+    <script type="text/javascript"  src="<?=PROOT?>js/owl.carousel.min.js"></script>
 
-  <script type="text/javascript"  src="<?=PROOT?>js/custom.js"></script>
-  <script type="text/javascript"  src="<?=PROOT?>js/shortcode.js"></script>
-  <script type="text/javascript"  src="<?=PROOT?>js/switcher.js"></script>
+    <script type="text/javascript"  src="<?=PROOT?>js/stellar.min.js"></script> 
+    <script type="text/javascript"  src="<?=PROOT?>js/scrolla.min.js"></script>
 
-  <script type="text/javascript" src="<?=PROOT?>plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
-  <script type="text/javascript" src="<?=PROOT?>plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript"  src="<?=PROOT?>js/custom.js"></script>
+    <script type="text/javascript"  src="<?=PROOT?>js/shortcode.js"></script>
+    <script type="text/javascript"  src="<?=PROOT?>js/switcher.js"></script>
 
-  <script type="text/javascript" src="<?=PROOT?>plugins/revolution/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-  <script type="text/javascript" src="<?=PROOT?>plugins/revolution/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-  <script type="text/javascript" src="<?=PROOT?>plugins/revolution/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-  <script type="text/javascript" src="<?=PROOT?>plugins/revolution/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-  <script type="text/javascript" src="<?=PROOT?>plugins/revolution/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-  <script type="text/javascript" src="<?=PROOT?>plugins/revolution/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-  <script type="text/javascript" src="<?=PROOT?>plugins/revolution/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-  <script type="text/javascript" src="<?=PROOT?>plugins/revolution/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-  <script type="text/javascript" src="<?=PROOT?>plugins/revolution/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script type="text/javascript" src="<?=PROOT?>plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="<?=PROOT?>plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
 
-  <script type="text/javascript" src="<?=PROOT?>js/rev-script-4.js"></script>
+    <script type="text/javascript" src="<?=PROOT?>plugins/revolution/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript" src="<?=PROOT?>plugins/revolution/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script type="text/javascript" src="<?=PROOT?>plugins/revolution/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript" src="<?=PROOT?>plugins/revolution/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="<?=PROOT?>plugins/revolution/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript" src="<?=PROOT?>plugins/revolution/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="<?=PROOT?>plugins/revolution/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript" src="<?=PROOT?>plugins/revolution/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="<?=PROOT?>plugins/revolution/revolution/js/extensions/revolution.extension.video.min.js"></script>
 
+    <script type="text/javascript" src="<?=PROOT?>js/rev-script-4.js"></script>
 </body>
 </html>
