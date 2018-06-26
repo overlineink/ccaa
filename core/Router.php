@@ -20,8 +20,7 @@
 			if (method_exists($controller, $action)) {
 				call_user_func_array([$dispatch, $action], $queryParams);
 			} else {
-				header("Location: ../_404");
-				//die('Este método não existe no \"' . $controller_name . '\"');
+				die('Este método não existe no \"' . $controller_name . '\"');
 			}
 		}
 

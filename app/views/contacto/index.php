@@ -1,3 +1,14 @@
+<?php $this->start('head'); ?>
+<style>
+    .linkable {
+        color: #c5ad4d;
+    }
+    a:hover {
+        color: #756831;
+    }
+</style>
+<?php $this->end(); ?>
+
 <?php $this->start('body'); ?>
 <div class="bg-gray-light p-tb20">
     <div class="container">
@@ -9,18 +20,15 @@
 </div>
 <div class="section-full p-t80 p-b50">
     <div class="container">
-    
-        <!-- CONTACT DETAIL BLOCK -->
         <div class="section-content m-b30">
-
             <div class="row">
             
                 <div class="col-md-4 col-sm-12 m-b30">
                     <div class="wt-icon-box-wraper center p-a30 bg-secondry">
                         <div class="icon-sm text-white m-b10"><i class="iconmoon-smartphone-1"></i></div>
                         <div class="icon-content">
-                            <h5 class="text-white">Phone number</h5>
-                            <p class="text-gray-dark">+91 564 548 4854</p>
+                            <h5 class="text-white">Número de telefone</h5>
+                            <p><a class="linkable" href="tel://+244222026518">(+244) 222 026518</a></p>
                         </div>
                     </div>
                 </div>
@@ -28,8 +36,8 @@
                     <div class="wt-icon-box-wraper center p-a30 bg-secondry">
                         <div class="icon-sm text-white m-b10"><i class="iconmoon-email"></i></div>
                         <div class="icon-content">
-                            <h5 class="text-white">Email address</h5>
-                            <p class="text-gray-dark">thewebmaxinfo@gmail.com</p>
+                            <h5 class="text-white">Endereço de e-mail</h5>
+                            <p><a class="linkable" href="mailto:info@ccaac-civil.com">info@ccaac-civil.com</a></p>
                         </div>
                     </div>
                 </div>
@@ -37,14 +45,13 @@
                     <div class="wt-icon-box-wraper center p-a30 bg-secondry">
                         <div class="icon-sm text-white m-b10"><i class="iconmoon-travel"></i></div>
                         <div class="icon-content">
-                            <h5 class="text-white">Address info</h5>
-                            <p class="text-gray-dark">252 W 43rd St New York, NY</p>
+                            <h5 class="text-white">Endereço</h5>
+                            <p class="text-gray-dark">Panguila Velha - Bengo, Angola</p>
                         </div>
                     </div>
                 </div>
             
             </div>
-
         </div>
         
         <!-- GOOGLE MAP & CONTACT FORM -->
@@ -54,7 +61,7 @@
                 <!-- LOCATION BLOCK-->
                 <div class="wt-box col-md-6">
                 
-                        <h4 class="text-uppercase">Location</h4>
+                        <h4 class="text-uppercase">Localização</h4>
                     <div class="wt-separator-outer m-b30">
                         <div class="wt-separator style-square">
                             <span class="separator-left bg-primary"></span>
@@ -68,11 +75,8 @@
                     </div>
                         
                 </div>
-
-                <!-- CONTACT FORM-->
                 <div class="wt-box col-md-6">
-                
-                    <h4 class="text-uppercase">Contact Form </h4>
+                    <h4 class="text-uppercase">Formulário de Contato </h4>
                     <div class="wt-separator-outer m-b30">
                         <div class="wt-separator style-square">
                             <span class="separator-left bg-primary"></span>
@@ -83,15 +87,13 @@
                 
                     <div class="p-a30 bg-gray">
                 
-                        <form class="cons-contact-form" method="post" action="http://thewebmax.com/build/form-handler.php">
-                
+                        <form  method="post">
                             <div class="row">
-                            
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                            <input name="username" type="text" required="" class="form-control" placeholder="Name">
+                                            <input name="name" autocomplete="name" type="text" required="" class="form-control" placeholder="Jorge Simões">
                                         </div>
                                     </div>
                                 </div>
@@ -100,7 +102,7 @@
                                     <div class="form-group">
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                            <input name="email" type="text" class="form-control" required="" placeholder="Email">
+                                            <input name="email"autocomplete="email" type="email" class="form-control" required="" placeholder="jorge.s@splashink.co">
                                         </div>
                                     </div>
 
@@ -110,14 +112,14 @@
                                     <div class="form-group">
                                         <div class="input-group">
                                             <span class="input-group-addon v-align-t"><i class="fa fa-pencil"></i></span>
-                                            <textarea name="message" rows="1" class="form-control " required="" placeholder="Message"></textarea>
+                                            <textarea name="message" autocomplete="message" rows="3" class="form-control " required="" placeholder="Olá, gostaria de marcar uma audiência em vossos escritórios"></textarea>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="col-md-12">
-                                    <button name="submit" type="submit" value="Submit" class="site-button  m-r15">Submit  <i class="fa fa-angle-double-right"></i></button>
-                                    <button name="Resat" type="reset" value="Reset" class="site-button ">Reset  <i class="fa fa-angle-double-right"></i></button>
+                                    <button type="submit" class="site-button  m-r15">Enviar mensagem <i class="fa fa-angle-double-right"></i></button>
+                                    <button type="reset"  class="site-button ">Resetar  <i class="fa fa-angle-double-right"></i></button>
                                 </div>
                             </div>
                         </form>

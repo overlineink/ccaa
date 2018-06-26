@@ -7644,7 +7644,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 }
 .top-bar .fa {
 	vertical-align: middle;
-	background-color:rgba(0,0,0,0.08);
+	background-color:rgba(255, 255, 255, 0.14);
 	border:1px solid rgba(0,0,0,0.01);
 	padding:3px;
 	width:22px;

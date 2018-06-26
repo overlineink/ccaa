@@ -133,7 +133,7 @@
 </div>
 
 <!-- Single quote -->
-<div class="call-to-action-wrap bg-primary bg-repeat" style="background-image:url(http://thewebmax.com/build/images/background/bg-4.png);">
+<div class="call-to-action-wrap bg-dark bg-repeat" style="background-image:url(http://thewebmax.com/build/images/background/bg-4.png);">
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-sm-8">
@@ -144,7 +144,7 @@
             
             <div class="col-md-3">
                 <div class="call-to-action-right p-tb30">
-                    <a href="#" class="site-button-secondry text-uppercase font-weight-600">
+                    <a href="<?=PROOT?>contacto" class="site-button-secondry text-uppercase font-weight-600">
                         Contacte-nos <i class="fa fa-angle-double-right"></i>
                     </a>
                 </div>
@@ -351,7 +351,7 @@
 </div>
 
 <!-- Single quote -->
-<div class="call-to-action-wrap bg-primary bg-repeat" style="background-image:url(http://thewebmax.com/build/images/background/bg-4.png);">
+<div class="call-to-action-wrap bg-dark bg-repeat" style="background-image:url(http://thewebmax.com/build/images/background/bg-4.png);">
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-sm-8">
@@ -362,7 +362,7 @@
             
             <div class="col-md-3">
                 <div class="call-to-action-right p-tb30">
-                    <a href="#" class="site-button-secondry text-uppercase font-weight-600">
+                    <a href="<?=PROOT?>contacto" class="site-button-secondry text-uppercase font-weight-600">
                         Contacte-nos <i class="fa fa-angle-double-right"></i>
                     </a>
                 </div>

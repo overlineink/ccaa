@@ -10,10 +10,7 @@
     public function __construct($table) {
       $this->_db = DB::getInstance();
       $this->_table = $table;
-      /*
-      1* Uncomment the second line [2*] if database profile [DB_NAME, DB_USER and DB_PASSWORD] is configurated [non-nullable values]
-      2* $this->_setTableColumns();
-      */
+      //$this->_setTableColumns();
       $this->_modelName = str_replace(' ', '', ucwords(str_replace('_', ' ', $this->_table)));
 
     }

@@ -107,6 +107,10 @@ ol.list-num-count>li::before,
 	background-color: #c5ad4d;
 }
 
+.bg-dark {
+	background-color: #1b1a26;
+}
+
 
 /* Premery hex buttons bg color*/
 

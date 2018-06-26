@@ -73,7 +73,7 @@
 <body id="bg">
 	<div class="page-wraper">        	
         <header class="site-header header-style-8">
-            <div class="top-bar bg-primary">
+            <div class="top-bar bg-dark">
                 <div class="container">
                     <div class="row">
                         <div class="clearfix">                        
@@ -380,7 +380,7 @@
         </div>
         <div class="footer-bottom overlay-wraper">
             <div class="overlay-main"></div>
-            <div class="constrot-strip"></div>
+            <div class="constrot-strip bg-dark"></div>
             <div class="container p-t30">
                 <div class="row">
                     <div class="wt-footer-bot-left">
@@ -388,9 +388,9 @@
                     </div>
                     <div class="wt-footer-bot-right">
                         <ul class="copyrights-nav pull-right"> 
-                            <li><a href="#">Terms  &amp; Condition</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Termos  &amp; Condições</a></li>
+                            <li><a href="#">Política de Privacidade</a></li>
+                            <li><a href="<?=PROOT?>contacto">Fale conosco</a></li>
                         </ul>
                     </div>
                 </div>
