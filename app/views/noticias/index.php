@@ -145,7 +145,7 @@
                                                 </div>
                                                 <div class="wt-post-info">
                                                     <div class="wt-post-header">
-                                                        <h6 class="post-title">Blog post title doler sit amet</h6>
+                                                        <h6 class="post-title">Lorem ipsum doler sit amet</h6>
                                                     </div>
                                                     <div class="wt-post-meta">
                                                         <ul>
