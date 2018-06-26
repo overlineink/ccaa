@@ -2,7 +2,7 @@
     class Noticias extends Controller {
 
         public function __construct($controller, $action) {
-            parent:__construct($controller, $action);
+            parent::__construct($controller, $action);
         }
 
         # display news list
