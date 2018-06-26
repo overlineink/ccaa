@@ -7,8 +7,13 @@
 
         # to display single notice
         public function indexAction() {
+            // view to be displayed
+            $this->view->render('noticia/index');
         }
 
         # to display a list of notices
-        public function recentesAction() {}
+        public function recentesAction() {
+            // view to be displayed
+            $this->view->render('noticia/recentes');
+        }
     }
