@@ -213,7 +213,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="<?=PROOT?>noticias/recentes">Notícias</a>
+                            <a href="<?=PROOT?>noticias">Notícias</a>
                         </li>
                         <li>
                             <a href="<?=PROOT?>contacto">Contactos</a>

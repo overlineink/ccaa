@@ -1,6 +1,6 @@
 
 <?php $this->start('body'); ?>
-
+    Noticias serao exibidas aqui!
 <?php $this->end(); ?>
 
 <?php $this->start('head'); ?>
