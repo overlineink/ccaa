@@ -7,6 +7,10 @@
 
         # display news list
         public function indexAction() {
+            // Set layout
+            $this->view->setLayout('_shared');
+            // Set view title
+            $this->view->setViewTitle('Noticias - CCAA');
             // view to be displayed
             $this->view->render('noticias/index');
         }
