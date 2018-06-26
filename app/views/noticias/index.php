@@ -118,7 +118,7 @@
                                         <div class="widget-post-bx">
                                             <div class="widget-post clearfix bg-gray">
                                                 <div class="wt-post-media">
-                                                    <img src="http://thewebmax.com/build/images/blog/recent-blog/pic1.jpg" alt="" class="radius-bx">
+                                                    <img src="https://s26.postimg.cc/9pk0tjtvd/logno_2.png" style="margin-top: 6px; height: 64px;" class="radius-bx">
                                                 </div>
                                                 <!-- Item -->
                                                 <div class="wt-post-info">
@@ -141,7 +141,7 @@
                                             <!-- Item -->
                                             <div class="widget-post clearfix bg-gray">
                                                 <div class="wt-post-media">
-                                                    <img src="http://thewebmax.com/build/images/blog/recent-blog/pic3.jpg" alt="" class="radius-bx">
+                                                    <img src="https://s26.postimg.cc/9pk0tjtvd/logno_2.png" style="margin-top: 6px; height: 64px;" class="radius-bx">
                                                 </div>
                                                 <div class="wt-post-info">
                                                     <div class="wt-post-header">
