@@ -84,9 +84,10 @@
                             </div>
                             <div class="wt-topbar-right">
                                 <ul class="list-unstyled e-p-bx pull-right">
-                                    <li><a href="https://www.facebook.com/ccaconstrucaocivil/" class="fa fa-facebook"></a></li>
-                                    <li><a href="https://www.instagram.com/ccaa.construcaocivil/" class="fa fa-instagram"></a></li>
-                                    <li><a href="https://www.twitter.com/ccaa.construcaocivil/" class="fa fa-twitter"></a></li>
+                                    <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
+                                    <li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
+                                    <li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
+                                    <li><a href="javascript:void(0);" class="fa fa-instagram"></a></li>
                                 </ul>
                             </div>
                         </div>
