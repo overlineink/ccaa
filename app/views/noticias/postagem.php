@@ -27,12 +27,32 @@
             <!-- Barra lateral ESQUERDA -->
             <div class="col-md-9">
                 <div class="row">
-                    <div class="portfolio-wrap wt-blog-grid-2" style="position: relative; height: 1734.89px;">
-                    
                         <!-- Item -->
-                         
+                        <div class="blog-post date-style-3 blog-post-single">
+                            <div class="wt-post-media wt-img-effect">
+                                <a href="javascript:void(0);"><img src="http://thewebmax.com/build/images/blog/default/thum1.jpg" alt=""></a>
+                            </div>
+                            <div class="post-description-area p-t30">
+                                <!-- Titulo -->
+                                <div class="wt-post-title ">
+                                    <h3 class="post-title"><?=$GLOBALS['q']?></h3>
+                                </div>
+                                <!-- Meta -->
+                                <div class="wt-post-meta ">
+                                    <ul>
+                                        <li class="post-date"> <i class="fa fa-calendar"></i><strong>06 Fevereiro</strong> <span> 2018</span> </li>
+                                        <li class="post-author"><i class="fa fa-user"></i><a href="http://splashink.co" target="_blank">Por <span>Splash Ink</span></a> </li>
+                                    </ul>
+                                </div>
+                                <!-- Texto -->
+                                <div class="wt-post-text">
+                                    <p>Asperiores, tenetur, blanditiis, quaerat odit ex exercitationem pariatur quibusdam veritatis quisquam laboriosam esse beatae hic perferendis velit deserunt soluta iste repellendus officia in neque veniam debitis Consectetur, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium vitae, consequuntur minima tempora cupiditate ratione est, ad molestias deserunt in ipsam ea quasi cum culpa adipisci dolores voluptatum fuga at! assumenda provident lorem ipsum dolor sit amet, consectetur.</p> 
+                                    
+                                    <div class="wt-divider bg-gray-dark"><i class="icon-dot c-square"></i></div>
+                                </div>
+                            </div>
+                        </div> 
                         <!-- end Item -->
-                    </div>
                 </div>
             </div>
             
