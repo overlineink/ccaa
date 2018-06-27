@@ -133,7 +133,7 @@
 </div>
 
 <!-- Single quote -->
-<div class="call-to-action-wrap bg-dark bg-repeat" style="background-image:url(http://thewebmax.com/build/images/background/bg-4.png);">
+<div class="call-to-action-wrap bg-dark bg-repeat" style="background-image:url(http://thewebmax.com/build/images/background/bg-4.png); margin-bottom: 11px;">
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-sm-8">

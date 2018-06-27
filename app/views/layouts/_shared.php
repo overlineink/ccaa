@@ -41,8 +41,8 @@
         <meta name="description" content="" />
         
         <!-- Favicon -->
-        <link rel="icon" href="<?=PROOT?>favicon.ico" type="image/x-icon" />
-        <link rel="shortcut icon" type="image/x-icon" href="<?=PROOT?>favicon.ico" />
+        <link rel="icon" href="http://getbootstrap.com/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" type="image/x-icon" href="http://getbootstrap.com/favicon.ico" />
         
         <!-- Title -->
         <title><?=$this->siteTitle()?></title>

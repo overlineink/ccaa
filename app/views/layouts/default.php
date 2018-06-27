@@ -37,8 +37,8 @@
     <meta name="description" content="" />
     
     <!-- favicon -->
-    <link rel="icon" href="<?=PROOT?>favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" type="image/x-icon" href="<?=PROOT?>favicon.ico" />
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="http://getbootstrap.com/favicon.ico" />
     <title><?=$this->siteTitle()?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     

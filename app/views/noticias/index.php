@@ -5,13 +5,19 @@
     <div class="container">
         <div class="wt-bnr-inr-entry">
             <h1 class="text-white">Acompanhe algumas das nossas notícias recentes.</h1>
+            <p class="text-white" style="margin-top: -23px;">O nosso cliente é uma empresa de referência no setor dos seguros que se encontra de momento a recrutar...</p>
+            <div class="call-to-action-left">
+                <a href="/ccaa/contacto" class="site-button-secondry text-uppercase font-weight-600">
+                Obter oferta<i style="margin-left: 8px;" class="fa fa-gift"></i>
+                </a>
+            </div>
         </div>
     </div>
 </div>
 <div class="bg-gray-light p-tb20">
     <div class="container">
         <ul class="wt-breadcrumb breadcrumb-style-2">
-            <li><a href=""><i class="fa fa-home"></i> Blog Notícias</a></li>
+            <li><a href=""><i class="fa fa-home"></i>Notícias</a></li>
             <li>Recentes</li>
         </ul>
     </div>
@@ -40,8 +46,8 @@
                                     <!-- Info -->
                                     <div class="wt-post-meta ">
                                         <ul>
-                                        <li class="post-date"> <i class="fa fa-calendar"></i><strong>06 Fevereiro</strong> <span> 2018</span> </li>
-                                        <li class="post-author"><i class="fa fa-user"></i><a href="http://splashink.co" target="_blank">Por <span>Splash Ink</span></a> </li>
+                                            <li class="post-date"> <i class="fa fa-calendar"></i><strong>06 Fevereiro</strong> <span> 2018</span> </li>
+                                            <li class="post-author"><i class="fa fa-user"></i><a href="http://splashink.co" target="_blank">Por <span>Splash Ink</span></a> </li>
                                         </ul>
                                     </div>
                                     <!-- Descrição -->

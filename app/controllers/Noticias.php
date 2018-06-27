@@ -17,8 +17,12 @@
         }
 
         public function postagemAction() {
-            $_q = $this->NoticiassModel->sanitizeUri($_SERVER['REQUEST_URI']);
-            $this->view->setViewTitle($_q);
+            # Defining page title
+                $_q = $this->NoticiassModel->sanitizeUri($_SERVER['REQUEST_URI']);
+                $this->view->setViewTitle($_q);
+                $GLOBALS['q'] = $_q;
+            // Set page layout
+            $this->view->setLayout('_shared');
             // View to be displayed
             $this->view->render('noticias/postagem');
         }
