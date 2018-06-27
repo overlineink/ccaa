@@ -11,7 +11,7 @@
 <div class="bg-gray-light p-tb20">
     <div class="container">
         <ul class="wt-breadcrumb breadcrumb-style-2">
-            <li><a href="<?=PROOT?>"><i class="fa fa-home"></i> Blog Notícias</a></li>
+            <li><a href=""><i class="fa fa-home"></i> Blog Notícias</a></li>
             <li>Recentes</li>
         </ul>
     </div>
@@ -35,13 +35,13 @@
                                 <!-- Titulo -->
                                 <div class="wt-post-info p-tb30 p-m30 bg-white">
                                     <div class="wt-post-title ">
-                                        <h3 class="post-title"><a href="javascript:void(0);">Criação de Lojas Online Inteligentes</a></h3>
+                                        <h3 class="post-title"><a href="<?=PROOT?>noticias/postagem/001/Criação de lojas inteligentes onlines">Criação de Lojas Online Inteligentes</a></h3>
                                     </div>
                                     <!-- Info -->
                                     <div class="wt-post-meta ">
                                         <ul>
                                         <li class="post-date"> <i class="fa fa-calendar"></i><strong>06 Fevereiro</strong> <span> 2018</span> </li>
-                                        <li class="post-author"><i class="fa fa-user"></i><a href="javascript:void(0);">Por <span>Splash Ink</span></a> </li>
+                                        <li class="post-author"><i class="fa fa-user"></i><a href="http://splashink.co" target="_blank">Por <span>Splash Ink</span></a> </li>
                                         </ul>
                                     </div>
                                     <!-- Descrição -->

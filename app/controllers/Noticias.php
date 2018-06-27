@@ -3,6 +3,7 @@
 
         public function __construct($controller, $action) {
             parent::__construct($controller, $action);
+            $this->load_model('Noticiass');
         }
 
         # display news list
@@ -11,7 +12,14 @@
             $this->view->setLayout('_shared');
             // Set view title
             $this->view->setViewTitle('Noticias - CCAA');
-            // view to be displayed
+            // View to be displayed
             $this->view->render('noticias/index');
+        }
+
+        public function postagemAction() {
+            $_q = $this->NoticiassModel->sanitizeUri($_SERVER['REQUEST_URI']);
+            $this->view->setViewTitle($_q);
+            // View to be displayed
+            $this->view->render('noticias/postagem');
         }
     }
