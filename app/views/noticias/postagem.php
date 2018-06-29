@@ -26,7 +26,7 @@
         <div class="row">
             <!-- Barra lateral ESQUERDA -->
             <div class="col-md-9">
-                <div class="row">
+                <div class="row" style="padding:0px 15px 0px 15px;">
                         <!-- Item -->
                         <div class="blog-post date-style-3 blog-post-single">
                             <div class="wt-post-media wt-img-effect">
@@ -52,7 +52,71 @@
                                 </div>
                             </div>
                         </div> 
-                        <!-- end Item -->
+                        <!-- Comentarios -->
+                        <div hidden class="clear" id="comment-list">
+                            <div class="comments-area" id="comments">
+
+                                <h2 class="comments-title">1 Comments</h2>
+
+                                <div class="p-tb30">
+                                    <ol class="comment-list">
+                                        <li class="comment">
+                                            <div class="comment-body">
+                                                <div class="comment-author vcard">
+                                                    <img  class="avatar photo" src="images/testimonials/pic2.jpg" alt="">
+                                                    <cite class="fn">Steffan</cite>
+                                                    <span class="says">says:</span>
+                                                </div>
+                                                <div class="comment-meta">
+                                                    <a href="javascript:void(0);">October 6, 2015 at 7:15 am</a>
+                                                </div>
+                                                <p>Vulputate cursus a sit amet mauris http://themeforest.net Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat </p>
+                                                <div class="reply">
+                                                    <a href="javascript:void(0);" class="comment-reply-link"></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                    <!-- Deixe seu comentario -->
+                                    <div class="comment-respond" id="respond">
+                                        <h3 class="comment-reply-title" id="reply-title">Leave a Comments
+                                            <small>
+                                                <a style="display:none;" href="#" id="cancel-comment-reply-link" rel="nofollow">Cancel reply</a>
+                                            </small>
+                                        </h3>
+                                        <form class="comment-form" id="commentform" method="post" >
+                                    
+                                            <p class="comment-form-author">
+                                                <label for="author">Name <span class="required">*</span></label>
+                                                <input type="text" value="" name="user-comment"  placeholder="Author" id="author">
+                                            </p>
+                                            
+                                            <p class="comment-form-email">
+                                                <label for="email">Email <span class="required">*</span></label>
+                                                <input type="text" value="" placeholder="Email" name="email" id="email">
+                                            </p>
+                                            
+                                            <p class="comment-form-url">
+                                                <label for="url">Website</label>
+                                                <input type="text"  value=""  placeholder="Website"  name="url" id="url">
+                                            </p>
+                                            
+                                            <p class="comment-form-comment">
+                                                <label for="comment">Comment</label>
+                                                <textarea rows="8" name="comment" placeholder="Comment" id="comment"></textarea>
+                                            </p>
+                                            
+                                            <p class="form-submit">
+                                                <button class="site-button text-uppercase" type="button">Submit Comment</button>
+                                            </p>
+                                            
+                                        </form>
+                                    </div>
+                                    <!-- end -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end Comentarios -->
                 </div>
             </div>
             
