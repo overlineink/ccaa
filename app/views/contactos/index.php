@@ -15,6 +15,7 @@
     <div class="container">
         <div class="wt-bnr-inr-entry">
             <h1 class="text-white">Envie-nos um texto ou solicite uma chamada</h1>
+            <p class="text-white" style="margin-top: -23px;">O nosso cliente é uma empresa de referência no setor dos seguros que se encontra de momento a recrutar...</p>
         </div>
     </div>
 </div>
