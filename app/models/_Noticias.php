@@ -1,5 +1,5 @@
 <?php
-    class Noticiass extends Model {
+    class _Noticias extends Model {
         
         public function __construct($table = '') {
             # uncomment this line parent::__construct($table);
