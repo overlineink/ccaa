@@ -3,7 +3,7 @@
 
         public function __construct($controller, $action) {
             parent::__construct($controller, $action);
-            $this->load_model('Noticiass');
+            $this->load_model('_Noticias');
         }
 
         # display news list
@@ -18,7 +18,7 @@
 
         public function postagemAction() {
             # Defining page title
-                $_q = $this->NoticiassModel->sanitizeUri($_SERVER['REQUEST_URI']);
+                $_q = $this->_NoticiasModel->sanitizeUri($_SERVER['REQUEST_URI']);
                 $this->view->setViewTitle($_q);
                 $GLOBALS['q'] = $_q;
             // Set page layout

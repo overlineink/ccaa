@@ -1,5 +1,5 @@
 <?php
-    class Contacts extends Model {
+    class _Contactos extends Model {
 
         # Construct
         public function __construct($_table = '') {

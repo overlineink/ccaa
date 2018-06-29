@@ -144,7 +144,7 @@
             
             <div class="col-md-3">
                 <div class="call-to-action-right p-tb30">
-                    <a href="<?=PROOT?>contacto" class="site-button-secondry text-uppercase font-weight-600">
+                    <a href="<?=PROOT?>contactos" class="site-button-secondry text-uppercase font-weight-600">
                         Contacte-nos <i class="fa fa-angle-double-right"></i>
                     </a>
                 </div>
@@ -362,7 +362,7 @@
             
             <div class="col-md-3">
                 <div class="call-to-action-right p-tb30">
-                    <a href="<?=PROOT?>contacto" class="site-button-secondry text-uppercase font-weight-600">
+                    <a href="<?=PROOT?>contactos" class="site-button-secondry text-uppercase font-weight-600">
                         Contacte-nos <i class="fa fa-angle-double-right"></i>
                     </a>
                 </div>

@@ -1,16 +1,16 @@
 <?php
-    class Contacto extends Controller {
+    class Contactos extends Controller {
 
         public function __construct($controller, $action) {
             parent::__construct($controller, $action);
-            $this->load_model('Contacts');
+            $this->load_model('_Contactos');
         }
 
         public function indexAction() {
             # Send contact form message
             define('DEFAULT_SUBJECT', 'Mensagem de Contacto');
             if (isset($_POST) && !empty($_POST)) {
-                if ($sender = $this->ContactsModel->sendMail($_POST['name'], $_POST['email'], DEFAULT_SUBJECT, $_POST['message'])) {
+                if ($sender = $this->_ContactosModel->sendMail($_POST['name'], $_POST['email'], DEFAULT_SUBJECT, $_POST['message'])) {
                     echo "<script> alert('Olá ". $_POST['name'] ."! Sua mensagem foi enviada com sucesso. :)'); </script>";
                 } else {
                     echo "<script> alert(':( Lamentamos ". $_POST['name'] ."! Sua mensagem não foi enviada. Porfavor tente novamente ou reporte o erro.'); </script>";
@@ -25,6 +25,6 @@
             $this->view->setViewTitle('Contactos - CCAA');
 
             // Set view to be displayed
-            $this->view->render('contacto/index');
+            $this->view->render('contactos/index');
         }
     }

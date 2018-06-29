@@ -248,7 +248,7 @@
                         <a href="<?=PROOT?>noticias">Notícias</a>
                     </li>
                     <li>
-                        <a href="<?=PROOT?>contacto">Contactos</a>
+                        <a href="<?=PROOT?>contactos">Contactos</a>
                     </li>
                 </ul>
             </div>
@@ -310,7 +310,7 @@
                                 <li><a href="#">Nossos Serviços</a></li>
                                 <li><a href="#">Galeria</a></li>
                                 <li><a href="#">Loja online</a></li>
-                                <li><a href="<?=PROOT?>contacto">Contactos</a></li>
+                                <li><a href="<?=PROOT?>contactos">Contactos</a></li>
                                 <li><a href="">FAQ</a></li>
                             </ul>
                         </div>
@@ -391,7 +391,7 @@
                         <ul class="copyrights-nav pull-right"> 
                             <li><a href="#">Termos  &amp; Condições</a></li>
                             <li><a href="#">Política de Privacidade</a></li>
-                            <li><a href="<?=PROOT?>contacto">Fale conosco</a></li>
+                            <li><a href="<?=PROOT?>contactos">Fale conosco</a></li>
                         </ul>
                     </div>
                 </div>
