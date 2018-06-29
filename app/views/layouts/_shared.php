@@ -199,7 +199,7 @@
                         <li>
                             <a href="">Portfolio <i class="fa fa-chevron-down"></i></a>
                             <ul class="sub-menu">
-                                <li><a href="">Quem Somos</a></li>
+                                <li><a href="<?=PROOT?>sobre">Quem Somos</a></li>
                                 <li><a href="">Nossos Serviços</a></li>
                                 <li><a href="">Galeria</a></li>
                             </ul>
@@ -276,7 +276,7 @@
                             <div class="widget widget_services">
                                 <h4 class="widget-title">Links Úteis</h4>
                                 <ul>
-                                    <li><a href="#">Quem somos?</a></li>
+                                    <li><a href="<?=PROOT?>sobre">Quem somos?</a></li>
                                     <li><a href="#">Nossos Serviços</a></li>
                                     <li><a href="#">Galeria</a></li>
                                     <li><a href="#">Loja online</a></li>

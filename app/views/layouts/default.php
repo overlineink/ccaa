@@ -231,7 +231,7 @@
                     <li>
                         <a href="">Portfolio <i class="fa fa-chevron-down"></i></a>
                         <ul class="sub-menu">
-                            <li><a href="">Quem Somos</a></li>
+                            <li><a href="<?=PROOT?>sobre">Quem Somos</a></li>
                             <li><a href="">Nossos Serviços</a></li>
                             <li><a href="">Galeria</a></li>
                         </ul>
@@ -306,7 +306,7 @@
                         <div class="widget widget_services">
                             <h4 class="widget-title">Links Úteis</h4>
                             <ul>
-                                <li><a href="#">Quem somos?</a></li>
+                                <li><a href="<?=PROOT?>sobre">Quem somos?</a></li>
                                 <li><a href="#">Nossos Serviços</a></li>
                                 <li><a href="#">Galeria</a></li>
                                 <li><a href="#">Loja online</a></li>
@@ -403,7 +403,7 @@
   <!-- optional scripts and pluggins -->
   <?= $this->content('scripts') ?>
 
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCz6xX2nI6cMkePba_DHQcs0MkR7m2IuvE&callback=initMap"  type="text/javascript"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgR-xrt7a1T7V2Tp-TeJ-2KNLEnt3_Sjo&callback=initMap"  type="text/javascript"></script>
   <script type="text/javascript"  src="<?=PROOT?>js/map.script.js"></script>
   <!-- Javascript files -->
   <script type="text/javascript"  src="<?=PROOT?>js/jquery-1.12.4.min.js"></script>
