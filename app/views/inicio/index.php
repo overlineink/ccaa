@@ -177,7 +177,6 @@
 					<div class="wt-info p-a30 bg-white">
 						<h4 class="wt-title m-t0"><a href="javascript:void(0);">Office Building</a></h4>
 						<p>Lorem ipsum dolor Fusce varius euismod lacus eget feugiat </p>
-						<a href="javascript:void(0);" class="site-button  ">More <i class="fa fa-angle-double-right"></i></a>
 					</div>
 				</div>
 			</div>
@@ -190,7 +189,6 @@
 					<div class="wt-info p-a30 bg-white">
 						<h4 class="wt-title m-t0"><a href="javascript:void(0);">Shopping Mall</a></h4>
 						<p>Lorem ipsum dolor Fusce varius euismod lacus eget feugiat </p>
-						<a href="javascript:void(0);" class="site-button  ">More <i class="fa fa-angle-double-right"></i></a>
 					</div>
 				</div>
 			</div>
@@ -203,7 +201,6 @@
 					<div class="wt-info p-a30 bg-white">
 						<h4 class="wt-title m-t0"><a href="javascript:void(0);">Hospital Building</a></h4>
 						<p>Lorem ipsum dolor Fusce varius euismod lacus eget feugiat </p>
-						<a href="javascript:void(0);" class="site-button  ">More <i class="fa fa-angle-double-right"></i></a>
 					</div>
 				</div>
 			</div>
@@ -216,7 +213,6 @@
 					<div class="wt-info p-a30 bg-white">
 						<h4 class="wt-title m-t0"><a href="javascript:void(0);">Hospital Building</a></h4>
 						<p>Lorem ipsum dolor Fusce varius euismod lacus eget feugiat </p>
-						<a href="javascript:void(0);" class="site-button  ">More <i class="fa fa-angle-double-right"></i></a>
 					</div>
 				</div>
 			</div>
