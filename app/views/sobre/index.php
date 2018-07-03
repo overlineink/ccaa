@@ -1,5 +1,5 @@
 <?php $this->start('body'); ?>
-<div class="wt-bnr-inr overlay-wraper" style="background-image:url(<?=PROOT?>images/banner-ccaa-white.png);">
+<div class="wt-bnr-inr overlay-wraper bg-parallax" style="background-image:url(<?=PROOT?>images/tpl.jpg);">
     <div class="overlay-main bg-black"></div>
 </div>
 <div class="bg-gray-light p-tb20">

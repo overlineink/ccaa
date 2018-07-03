@@ -1,6 +1,6 @@
 
 <?php $this->start('body'); ?>
-<div class="wt-bnr-inr overlay-wraper" style="background-image:url(https://images.unsplash.com/photo-1511805296765-e8de8e3750f4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=aa35de728b473ed2ed31b592b8b37483&auto=format&fit=crop&w=1479&q=80);">
+<div class="wt-bnr-inr overlay-wraper bg-parallax" style="background-image:url(<?=PROOT?>images/tpl.jpg);">
     <div class="overlay-main bg-black opacity-07"></div>
     <div class="container">
         <div class="wt-bnr-inr-entry">
