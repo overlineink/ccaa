@@ -200,7 +200,6 @@
                             <a href="">Portfolio <i class="fa fa-chevron-down"></i></a>
                             <ul class="sub-menu">
                                 <li><a href="<?=PROOT?>sobre">Quem Somos</a></li>
-                                <li><a href="">Nossos Serviços</a></li>
                                 <li><a href="<?=PROOT?>galeria">Galeria</a></li>
                             </ul>
                         </li>
@@ -277,7 +276,6 @@
                                 <h4 class="widget-title">Links Úteis</h4>
                                 <ul>
                                     <li><a href="<?=PROOT?>sobre">Quem somos?</a></li>
-                                    <li><a href="#">Nossos Serviços</a></li>
                                     <li><a href="<?=PROOT?>galeria">Galeria</a></li>
                                     <li><a href="#">Loja online</a></li>
                                     <li><a href="<?=PROOT?>contactos">Contactos</a></li>
