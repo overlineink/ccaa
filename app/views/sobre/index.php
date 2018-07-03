@@ -5,7 +5,7 @@
 <div class="bg-gray-light p-tb20">
     <div class="container">
         <ul class="wt-breadcrumb breadcrumb-style-2">
-            <li><a href="<?=PROOT?>"><i class="fa fa-home"></i> Página Inicial</a></li>
+            <li><a href="<?=PROOT?>"><i class="fa fa-home"></i> Portfolio</a></li>
             <li>Quem Somos</li>
         </ul>
     </div>
