@@ -156,66 +156,72 @@
 <!-- Our services -->
 <div class="section-full p-t80 p-b50  ">
 	<div class="container">
-		<!-- TITLE START -->
 		<div class="section-head text-center">
-				<h2 class="text-uppercase">Our Projects</h2>
-				<div class="wt-separator-outer">
-					<div class="wt-separator style-square">
-						<span class="separator-left bg-primary"></span>
-						<span class="separator-right bg-primary"></span>
-					</div>
+			<h2 class="text-uppercase">Our Projects</h2>
+			<div class="wt-separator-outer">
+				<div class="wt-separator style-square">
+					<span class="separator-left bg-primary"></span>
+					<span class="separator-right bg-primary"></span>
 				</div>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever 
-				since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book has survived.</p>
 			</div>
-		<!-- TITLE END -->     
-		<div class="section-content">
-			<div class="row">
-			
-				<!-- COLUMNS 1 --> 
-				<div class="col-md-4 col-sm-4 p-tb15">
-					<div class="wt-box bg-white">
-						<div class="wt-media">
-							<a href="javascript:void(0);"><img src="http://thewebmax.com/build/images/our-work/pic1.jpg" alt=""></a>
-						</div>
-						<div class="wt-info p-tb30">
-							<h4 class="wt-title m-t0"><a href="javascript:void(0);">Shopping Mall</a></h4>
-							<p>Lorem ipsum dolor consectetur adipiscing Fusce varius euismod lacus eget feugiat rorem ipsum dolor consectetur Fusce varius . </p>
-							<a href="javascript:void(0);" class="site-button outline   black"><strong class="text-center">Read More</strong></a>
-						</div>
-					</div>
-				</div>
-				<!-- COLUMNS 2 -->
-				<div class="col-md-4 col-sm-4 p-tb15">
-					<div class="wt-box bg-white">
-						<div class="wt-media">
-							<a href="javascript:void(0);"><img src="http://thewebmax.com/build/images/our-work/pic2.jpg" alt=""></a>
-						</div>
-						<div class="wt-info p-tb30">
-							<h4 class="wt-title m-t0"><a href="javascript:void(0);">Hospital Building</a></h4>
-							<p>Lorem ipsum dolor consectetur adipiscing Fusce varius euismod lacus eget feugiat rorem ipsum dolor consectetur Fusce varius . </p>
-							<a href="javascript:void(0);" class="site-button outline   black"><strong class="text-center">Read More</strong></a>
-						</div>
-					</div>
-				</div>
-				<!-- COLUMNS 3 -->
-				<div class="col-md-4 col-sm-4 p-tb15">
-					<div class="wt-box bg-white">
-						<div class="wt-media">
-							<a href="javascript:void(0);"><img src="http://thewebmax.com/build/images/our-work/pic3.jpg" alt=""></a>
-						</div>
-						<div class="wt-info p-tb30">
-							<h4 class="wt-title m-t0"><a href="javascript:void(0);">Garden House</a></h4>
-							<p>Lorem ipsum dolor consectetur adipiscing Fusce varius euismod lacus eget feugiat rorem ipsum dolor consectetur Fusce varius . </p>
-							<a href="javascript:void(0);" class="site-button outline   black"><strong class="text-center">Read More</strong></a>
-						</div>
-					</div>
-				</div>
-				
-			
-			</div>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever 
+			since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book has survived.</p>
 		</div>
-
+		<div class="row">
+								
+			<div class="col-md-3 col-sm-3 m-b30">
+				<div class="wt-box">
+					<div class="wt-media">
+						<a href="javascript:void(0);"><img src="http://thewebmax.com/build/images/our-work/pic1.jpg" alt=""></a>
+				</div>
+					<div class="wt-info p-a30 bg-white">
+						<h4 class="wt-title m-t0"><a href="javascript:void(0);">Office Building</a></h4>
+						<p>Lorem ipsum dolor Fusce varius euismod lacus eget feugiat </p>
+						<a href="javascript:void(0);" class="site-button  ">More <i class="fa fa-angle-double-right"></i></a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-3 col-sm-3 m-b30">
+				<div class="wt-box">
+					<div class="wt-media">
+						<a href="javascript:void(0);"><img src="http://thewebmax.com/build/images/our-work/pic2.jpg" alt=""></a>
+					</div>
+					<div class="wt-info p-a30 bg-white">
+						<h4 class="wt-title m-t0"><a href="javascript:void(0);">Shopping Mall</a></h4>
+						<p>Lorem ipsum dolor Fusce varius euismod lacus eget feugiat </p>
+						<a href="javascript:void(0);" class="site-button  ">More <i class="fa fa-angle-double-right"></i></a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-3 col-sm-3 m-b30">
+				<div class="wt-box">
+					<div class="wt-media">
+						<a href="javascript:void(0);"><img src="http://thewebmax.com/build/images/our-work/pic3.jpg" alt=""></a>
+					</div>
+					<div class="wt-info p-a30 bg-white">
+						<h4 class="wt-title m-t0"><a href="javascript:void(0);">Hospital Building</a></h4>
+						<p>Lorem ipsum dolor Fusce varius euismod lacus eget feugiat </p>
+						<a href="javascript:void(0);" class="site-button  ">More <i class="fa fa-angle-double-right"></i></a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-3 col-sm-3 m-b30">
+				<div class="wt-box">
+					<div class="wt-media">
+						<a href="javascript:void(0);"><img src="http://thewebmax.com/build/images/our-work/pic4.jpg" alt=""></a>
+					</div>
+					<div class="wt-info p-a30 bg-white">
+						<h4 class="wt-title m-t0"><a href="javascript:void(0);">Hospital Building</a></h4>
+						<p>Lorem ipsum dolor Fusce varius euismod lacus eget feugiat </p>
+						<a href="javascript:void(0);" class="site-button  ">More <i class="fa fa-angle-double-right"></i></a>
+					</div>
+				</div>
+			</div>
+							
+		</div>
 	</div>
 </div>
 
