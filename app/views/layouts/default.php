@@ -1,30 +1,4 @@
-<?php
-  // Droping data
-  if(isset($_GET["action"])) {  
-        if($_GET["action"] == "delete")  
-        {  
-            foreach($_SESSION["shopping_cart"] as $keys => $values)  
-            {  
-                  if($values["item_id"] == $_GET["id"])  
-                  {  
-                      unset($_SESSION["shopping_cart"][$keys]);  
-                      echo '<script>alert("Item Removido")</script>';  
-                      echo '<script>window.location="'. PROOT .'"</script>';  
-                  }  
-            }  
-        }  
-  }  
-  // Data
-  $_SESSION["shopping_cart"] = array(
-    ["item_id" => 1, "name" => "Capacete DQ", "price" => 3500.00, "url" => "http://thewebmax.com/build/images/cart/pic-1.jpg", "qtd" => 2],
-    ["item_id" => 2, "name" => "Berbequim", "price" => 45000.00, "url" => "http://thewebmax.com/build/images/cart/pic-2.jpg", "qtd" => 1],
-    ["item_id" => 3, "name" => "Capacete", "price" => 2000.00, "url" => "http://thewebmax.com/build/images/cart/pic-1.jpg", "qtd" => 12],
-    ["item_id" => 4, "name" => "Berbequim ACL", "price" => 15000.00, "url" => "http://thewebmax.com/build/images/cart/pic-2.jpg", "qtd" => 8]
-  );
-  
-  // Counting stored items
-  $_count = count($_SESSION["shopping_cart"], COUNT_NORMAL);
-?>
+<?php require_once('scripts/shopify.php'); $_shopify = Shopify::getInstance(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -163,7 +137,7 @@
                             <span class="woo-cart-total"> </span>
                             <span class="woo-cart-count">
                                 
-                                <span class="shopping-bag wcmenucart-count "> <?=$_count?> </span>
+                                <span class="shopping-bag wcmenucart-count "><?=$_shopify->countItems();?></span>
                             </span>
                         </span>
                     </a>
@@ -172,34 +146,31 @@
                         <div class="nav-cart-content">
                             
                             <div class="nav-cart-items p-a15">
-                                <?php // Get stored items
-                                for($i = 0; $i < count($_SESSION["shopping_cart"]); $i++): ?>
-                                <div class="nav-cart-item clearfix">
-                                    <div class="nav-cart-item-image">
-                                        <a href="#"><img src="<?=$_SESSION["shopping_cart"][$i]['url']?>" alt="p-1"></a>
-                                    </div>
-                                    <div class="nav-cart-item-desc">
-                                        <a href="#"><?=$_SESSION["shopping_cart"][$i]['name']?></a>
-                                        <span class="nav-cart-item-price"><strong><?=$_SESSION["shopping_cart"][$i]['qtd']?></strong> x <?=$_SESSION["shopping_cart"][$i]['price']?> Kz</span>
-                                        <a href="index.php?action=delete&id=<?=$_SESSION["shopping_cart"][$i]['item_id']?>" class="nav-cart-item-quantity">x</a>
-                                    </div>
-                                </div>
-                                <?php endfor; ?>
+                            <?php // Get stored items
+                                if (isset($_SESSION["shopping_cart"])) {
+                                    for($i = 0; $i < count($_SESSION["shopping_cart"]); $i++): ?>
+                                        <div class="nav-cart-item clearfix">
+                                            <div class="nav-cart-item-image">
+                                                <a href="#"><img src="<?=$_SESSION["shopping_cart"][$i]['url']?>" alt="p-1"></a>
+                                            </div>
+                                            <div class="nav-cart-item-desc">
+                                                <a href="#"><?=$_SESSION["shopping_cart"][$i]['name']?></a>
+                                                <span class="nav-cart-item-price"><strong><?=$_SESSION["shopping_cart"][$i]['qtd']?></strong> x <?=$_SESSION["shopping_cart"][$i]['price']?> Kz</span>
+                                                <a href="index.php?action=delete&id=<?=$_SESSION["shopping_cart"][$i]['item_id']?>" class="nav-cart-item-quantity">x</a>
+                                            </div>
+                                        </div>
+                                <?php endfor;
+                                    } else {?>
+                                        <div class="nav-cart-item clearfix">
+                                            <div class="nav-cart-item-desc">
+                                                <span class="nav-cart-item-price"><strong>Nenhum item no carrinho.</strong></span>
+                                            </div>
+                                        </div>
+                                    <?php } ?>
                             </div>
                             <div class="nav-cart-title p-tb10 p-lr15 clearfix">
-                                <?php // Calculate total
-                                if (!isset($_SESSION["shopping_cart"])) {
-                                    $_SESSION['total'] = 0;
-                                } else {
-                                    $_total = 0;
-                                    for ($x = 0; $x < count($_SESSION["shopping_cart"]); $x++) {
-                                        $_total = $_total + ($_SESSION["shopping_cart"][$x]["price"] * $_SESSION["shopping_cart"][$x]["qtd"]);
-                                        $_SESSION['total'] = number_format($_total, 2);
-                                    }
-                                }
-                                ?>
                                 <h4  class="pull-left m-a0">Subtotal:</h4>
-                                <h5 class="pull-right m-a0"><?= $_SESSION['total'] ?> KZ's</h5>
+                                <h5 class="pull-right m-a0"><?=$_shopify->getTotal()?> KZ's</h5>
                             </div>
                             <div class="nav-cart-action p-a15 clearfix">
                                 <button class="site-button  btn-block m-b15 " type="button">Ver carrinho</button>
