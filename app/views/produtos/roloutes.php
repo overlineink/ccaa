@@ -63,6 +63,7 @@
                         </div>  
                                                                                                                                                                                     
                     </aside>
+
                 </div>
                 <!-- SIDE BAR END --> 
                 <div class="col-md-9"> 
@@ -71,7 +72,7 @@
                         <div class="row">
                             <div class="col-md-6 col-sm-6">
                                 <div class="wt-box pro-banner">
-                                    <img src="images/add/pic1.jpg">
+                                    <img src="http://thewebmax.com/build/images/add/pic1.jpg">
                                     <div class="pro-banner-disc p-a20 text-white">
                                         <h2 class="text-uppercase m-a0 m-b10">Best time to buy</h2>
                                         <h4 class="m-a0 m-b10">Our Product</h4>
@@ -83,7 +84,7 @@
                             </div>
                             <div class="col-md-6 col-sm-6">
                                 <div class="wt-box pro-banner">
-                                    <img src="images/add/pic2.jpg">
+                                    <img src="http://thewebmax.com/build/images/add/pic2.jpg">
                                     <div class="pro-banner-disc p-a20 text-white">
                                         <h2 class="text-uppercase m-a0 m-b10">Best time to buy</h2>
                                         <h4 class="m-a0 m-b10">Our Product</h4>
@@ -114,7 +115,7 @@
                         <div class="col-md-4 col-sm-4 col-xs-6 col-xs-100pc m-b30">
                             <div class="wt-box wt-product-box">
                                 <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
-                                    <img src="images/products/pic-1.jpg" alt="">
+                                    <img src="http://thewebmax.com/build/images/products/pic-1.jpg" alt="">
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
                                             <a href="javascript:void(0);">
@@ -157,7 +158,7 @@
                         <div class="col-md-4 col-sm-4 col-xs-6 col-xs-100pc m-b30">
                             <div class="wt-box wt-product-box">
                                 <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
-                                    <img src="images/products/pic-2.jpg" alt="">
+                                    <img src="http://thewebmax.com/build/images/products/pic-2.jpg" alt="">
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
                                             <a href="javascript:void(0);">
@@ -200,7 +201,7 @@
                         <div class="col-md-4 col-sm-4 col-xs-6 col-xs-100pc m-b30">
                             <div class="wt-box wt-product-box">
                                 <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
-                                    <img src="images/products/pic-3.jpg" alt="">
+                                    <img src="http://thewebmax.com/build/images/products/pic-3.jpg" alt="">
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
                                             <a href="javascript:void(0);">
@@ -243,7 +244,7 @@
                         <div class="col-md-4 col-sm-4 col-xs-6 col-xs-100pc m-b30">
                             <div class="wt-box wt-product-box">
                                 <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
-                                    <img src="images/products/pic-4.jpg" alt="">
+                                    <img src="http://thewebmax.com/build/images/products/pic-4.jpg" alt="">
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
                                             <a href="javascript:void(0);">
@@ -286,7 +287,7 @@
                         <div class="col-md-4 col-sm-4 col-xs-6 col-xs-100pc m-b30">
                             <div class="wt-box wt-product-box">
                                 <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
-                                    <img src="images/products/pic-5.jpg" alt="">
+                                    <img src="http://thewebmax.com/build/images/products/pic-5.jpg" alt="">
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
                                             <a href="javascript:void(0);">
@@ -329,7 +330,7 @@
                         <div class="col-md-4 col-sm-4 col-xs-6 col-xs-100pc m-b30">
                             <div class="wt-box wt-product-box">
                                 <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
-                                    <img src="images/products/pic-6.jpg" alt="">
+                                    <img src="http://thewebmax.com/build/images/products/pic-6.jpg" alt="">
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
                                             <a href="javascript:void(0);">
@@ -372,7 +373,7 @@
                         <div class="col-md-4 col-sm-4 col-xs-6 col-xs-100pc m-b30">
                             <div class="wt-box wt-product-box">
                                 <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
-                                    <img src="images/products/pic-7.jpg" alt="">
+                                    <img src="http://thewebmax.com/build/images/products/pic-7.jpg" alt="">
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
                                             <a href="javascript:void(0);">
@@ -415,7 +416,7 @@
                         <div class="col-md-4 col-sm-4 col-xs-6 col-xs-100pc m-b30">
                             <div class="wt-box wt-product-box">
                                 <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
-                                    <img src="images/products/pic-8.jpg" alt="">
+                                    <img src="http://thewebmax.com/build/images/products/pic-8.jpg" alt="">
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
                                             <a href="javascript:void(0);">
@@ -458,7 +459,7 @@
                         <div class="col-md-4 col-sm-4 col-xs-6 col-xs-100pc m-b30">
                             <div class="wt-box wt-product-box">
                                 <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
-                                    <img src="images/products/pic-5.jpg" alt="">
+                                    <img src="http://thewebmax.com/build/images/products/pic-5.jpg" alt="">
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
                                             <a href="javascript:void(0);">
@@ -517,7 +518,7 @@
                         <div class="col-md-3 col-sm-4 col-xs-6 col-xs-100pc m-b30">
                             <div class="wt-box wt-product-box">
                                 <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
-                                    <img src="images/products/pic-1.jpg" alt="">
+                                    <img src="http://thewebmax.com/build/images/products/pic-1.jpg" alt="">
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
                                             <a href="javascript:void(0);">
@@ -560,7 +561,7 @@
                         <div class="col-md-3 col-sm-4 col-xs-6 col-xs-100pc m-b30">
                             <div class="wt-box wt-product-box">
                                 <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
-                                    <img src="images/products/pic-2.jpg" alt="">
+                                    <img src="http://thewebmax.com/build/images/products/pic-2.jpg" alt="">
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
                                             <a href="javascript:void(0);">
@@ -603,7 +604,7 @@
                         <div class="col-md-3 col-sm-4 col-xs-6 col-xs-100pc m-b30">
                             <div class="wt-box wt-product-box">
                                 <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
-                                    <img src="images/products/pic-3.jpg" alt="">
+                                    <img src="http://thewebmax.com/build/images/products/pic-3.jpg" alt="">
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
                                             <a href="javascript:void(0);">
@@ -646,7 +647,7 @@
                         <div class="col-md-3 col-sm-4 col-xs-6 col-xs-100pc m-b30">
                             <div class="wt-box wt-product-box">
                                 <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
-                                    <img src="images/products/pic-4.jpg" alt="">
+                                    <img src="http://thewebmax.com/build/images/products/pic-4.jpg" alt="">
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
                                             <a href="javascript:void(0);">
