@@ -103,183 +103,48 @@
                     <!-- TITLE END -->
                     
                     <div class="row">
-                        <!-- COLUMNS 1 -->
+
+                        <!-- Item -->
                         <div class="col-md-4 col-sm-4 col-xs-6 col-xs-100pc m-b30">
-                            <div class="wt-box wt-product-box">
-                                <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
-                                    <img src="http://thewebmax.com/build/images/products/pic-1.jpg" alt="">
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon">
-                                            <a href="javascript:void(0);">
-                                                <i class="fa fa-cart-plus wt-icon-box-xs"></i>
-                                            </a>
-                                            <a class="mfp-link" href="javascript:void(0);">
-                                                <i class="fa fa-heart wt-icon-box-xs"></i>
-                                            </a>
+                            <form method="POST">
+                                <div class="wt-box wt-product-box">
+                                    <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
+                                        <img src="http://thewebmax.com/build/images/products/pic-1.jpg"/>
+                                        <div class="overlay-bx">
+                                            <div class="overlay-icon">
+                                                <a href="<?=PROOT?>produtos/detalhes/47/Martines">
+                                                    <i class="fa fa-cart-plus wt-icon-box-xs"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wt-info  text-center">
+                                        <div class="p-a10 bg-white">
+                                            <h4 class="wt-title">
+                                                <a href="">Martines</a>
+                                            </h4>
+                                            <span class="price">
+                                                <del>
+                                                        <span><span class="Price-currencySymbol">AOA</span> 3000.00</span>
+                                                </del> 
+                                                <ins>
+                                                    <span><span class="Price-currencySymbol">AOA</span> 2500.00</span>
+                                                </ins>
+                                            </span>
+                                            <div class="p-t10">
+                                                <input type="hidden" name="itemId" value="0101">
+                                                <input type="hidden" name="name" value="Martines">
+                                                <button class="site-button m-r15" type="submit"><i class="fa fa-cart-plus"></i> Adicionar ao Carrinho</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="wt-info  text-center">
-                                        <div class="p-a10 bg-white">
-                                        <h4 class="wt-title">
-                                            <a href="javascript:;">One Martines</a>
-                                        </h4>
-                                        <span class="price">
-                                            <del>
-                                                    <span><span class="Price-currencySymbol">£</span>3.00</span>
-                                            </del> 
-                                            <ins>
-                                                <span><span class="Price-currencySymbol">£</span>2.00</span>
-                                            </ins>
-                                        </span>
-                                        <div class="rating-bx">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                        <div class="p-t10">
-                                            <button class="site-button  m-r15" type="button">ADD TO CART  <i class="fa fa-angle-double-right"></i></button>
-                                        </div>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- COLUMNS 2 -->
-                        <div class="col-md-4 col-sm-4 col-xs-6 col-xs-100pc m-b30">
-                            <div class="wt-box wt-product-box">
-                                <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
-                                    <img src="http://thewebmax.com/build/images/products/pic-2.jpg" alt="">
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon">
-                                            <a href="javascript:void(0);">
-                                                <i class="fa fa-cart-plus wt-icon-box-xs"></i>
-                                            </a>
-                                            <a class="mfp-link" href="javascript:void(0);">
-                                                <i class="fa fa-heart wt-icon-box-xs"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wt-info  text-center">
-                                        <div class="p-a10 bg-white">
-                                        <h4 class="wt-title">
-                                            <a href="javascript:;">Two Martines </a>
-                                        </h4>
-                                        <span class="price">
-                                            <del>
-                                                    <span><span class="Price-currencySymbol">£</span>3.00</span>
-                                            </del> 
-                                            <ins>
-                                                <span><span class="Price-currencySymbol">£</span>2.00</span>
-                                            </ins>
-                                        </span>
-                                        <div class="rating-bx">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                        <div class="p-t10">
-                                            <button class="site-button  m-r15" type="button">ADD TO CART  <i class="fa fa-angle-double-right"></i></button>
-                                        </div>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- COLUMNS 3 -->
-                        <div class="col-md-4 col-sm-4 col-xs-6 col-xs-100pc m-b30">
-                            <div class="wt-box wt-product-box">
-                                <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
-                                    <img src="http://thewebmax.com/build/images/products/pic-3.jpg" alt="">
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon">
-                                            <a href="javascript:void(0);">
-                                                <i class="fa fa-cart-plus wt-icon-box-xs"></i>
-                                            </a>
-                                            <a class="mfp-link" href="javascript:void(0);">
-                                                <i class="fa fa-heart wt-icon-box-xs"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wt-info  text-center">
-                                        <div class="p-a10 bg-white">
-                                        <h4 class="wt-title">
-                                            <a href="javascript:;">Three Martines</a>
-                                        </h4>
-                                        <span class="price">
-                                            <del>
-                                                    <span><span class="Price-currencySymbol">£</span>3.00</span>
-                                            </del> 
-                                            <ins>
-                                                <span><span class="Price-currencySymbol">£</span>2.00</span>
-                                            </ins>
-                                        </span>
-                                        <div class="rating-bx">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                        <div class="p-t10">
-                                            <button class="site-button  m-r15" type="button">ADD TO CART  <i class="fa fa-angle-double-right"></i></button>
-                                        </div>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- COLUMNS 4 -->
-                        <div class="col-md-4 col-sm-4 col-xs-6 col-xs-100pc m-b30">
-                            <div class="wt-box wt-product-box">
-                                <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
-                                    <img src="http://thewebmax.com/build/images/products/pic-4.jpg" alt="">
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon">
-                                            <a href="javascript:void(0);">
-                                                <i class="fa fa-cart-plus wt-icon-box-xs"></i>
-                                            </a>
-                                            <a class="mfp-link" href="javascript:void(0);">
-                                                <i class="fa fa-heart wt-icon-box-xs"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wt-info  text-center">
-                                        <div class="p-a10 bg-white">
-                                        <h4 class="wt-title">
-                                            <a href="javascript:;">Four Martines</a>
-                                        </h4>
-                                        <span class="price">
-                                            <del>
-                                                    <span><span class="Price-currencySymbol">£</span>3.00</span>
-                                            </del> 
-                                            <ins>
-                                                <span><span class="Price-currencySymbol">£</span>2.00</span>
-                                            </ins>
-                                        </span>
-                                        <div class="rating-bx">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                        <div class="p-t10">
-                                            <button class="site-button  m-r15" type="button">ADD TO CART  <i class="fa fa-angle-double-right"></i></button>
-                                        </div>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>                                    
+                            </form>
+                        </div>                                   
                     </div>
                     
-                    <!-- TITLE START -->
                     <div class="p-b10">
-                        <h2 class="text-uppercase">Featured products</h2>
+                        <h2 class="text-uppercase">Produtos em destaque</h2>
                         <div class="wt-separator-outer  m-b30">
                             <div class="wt-separator style-square">
                                 <span class="separator-left bg-primary"></span>
@@ -287,181 +152,44 @@
                             </div>
                         </div>
                     </div>
-                    <!-- TITLE END -->
                 
                     <div class="row">
                     
-                        <!-- COLUMNS 1 -->
                         <div class="col-md-3 col-sm-4 col-xs-6 col-xs-100pc m-b30">
-                            <div class="wt-box wt-product-box">
-                                <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
-                                    <img src="http://thewebmax.com/build/images/products/pic-1.jpg" alt="">
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon">
-                                            <a href="javascript:void(0);">
-                                                <i class="fa fa-cart-plus wt-icon-box-xs"></i>
-                                            </a>
-                                            <a class="mfp-link" href="javascript:void(0);">
-                                                <i class="fa fa-heart wt-icon-box-xs"></i>
-                                            </a>
+                            <form method="POST">
+                                <div class="wt-box wt-product-box">
+                                    <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
+                                        <img src="http://thewebmax.com/build/images/products/pic-1.jpg"/>
+                                        <div class="overlay-bx">
+                                            <div class="overlay-icon">
+                                                <a href="<?=PROOT?>produtos/detalhes/47/Martines">
+                                                    <i class="fa fa-cart-plus wt-icon-box-xs"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wt-info  text-center">
+                                        <div class="p-a10 bg-white">
+                                            <h4 class="wt-title">
+                                                <a href="">Martines BB</a>
+                                            </h4>
+                                            <span class="price">
+                                                <del>
+                                                        <span><span class="Price-currencySymbol">AOA</span> 3000.00</span>
+                                                </del> 
+                                                <ins>
+                                                    <span><span class="Price-currencySymbol">AOA</span> 2500.00</span>
+                                                </ins>
+                                            </span>
+                                            <div class="p-t10">
+                                                <input type="hidden" name="itemId" value="0102">
+                                                <input type="hidden" name="name" value="Martines BB">
+                                                <button class="site-button m-r15" type="submit"><i class="fa fa-cart-plus"></i> Adicionar ao Carrinho</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="wt-info  text-center">
-                                        <div class="p-a10 bg-white">
-                                        <h4 class="wt-title">
-                                            <a href="javascript:;">One Martines</a>
-                                        </h4>
-                                        <span class="price">
-                                            <del>
-                                                    <span><span class="Price-currencySymbol">£</span>3.00</span>
-                                            </del> 
-                                            <ins>
-                                                <span><span class="Price-currencySymbol">£</span>2.00</span>
-                                            </ins>
-                                        </span>
-                                        <div class="rating-bx">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                        <div class="p-t10">
-                                            <button class="site-button  m-r15" type="button">ADD TO CART  <i class="fa fa-angle-double-right"></i></button>
-                                        </div>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- COLUMNS 2 -->
-                        <div class="col-md-3 col-sm-4 col-xs-6 col-xs-100pc m-b30">
-                            <div class="wt-box wt-product-box">
-                                <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
-                                    <img src="http://thewebmax.com/build/images/products/pic-2.jpg" alt="">
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon">
-                                            <a href="javascript:void(0);">
-                                                <i class="fa fa-cart-plus wt-icon-box-xs"></i>
-                                            </a>
-                                            <a class="mfp-link" href="javascript:void(0);">
-                                                <i class="fa fa-heart wt-icon-box-xs"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wt-info  text-center">
-                                        <div class="p-a10 bg-white">
-                                        <h4 class="wt-title">
-                                            <a href="javascript:;">Two Martines </a>
-                                        </h4>
-                                        <span class="price">
-                                            <del>
-                                                    <span><span class="Price-currencySymbol">£</span>3.00</span>
-                                            </del> 
-                                            <ins>
-                                                <span><span class="Price-currencySymbol">£</span>2.00</span>
-                                            </ins>
-                                        </span>
-                                        <div class="rating-bx">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                        <div class="p-t10">
-                                            <button class="site-button  m-r15" type="button">ADD TO CART  <i class="fa fa-angle-double-right"></i></button>
-                                        </div>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- COLUMNS 3 -->
-                        <div class="col-md-3 col-sm-4 col-xs-6 col-xs-100pc m-b30">
-                            <div class="wt-box wt-product-box">
-                                <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
-                                    <img src="http://thewebmax.com/build/images/products/pic-3.jpg" alt="">
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon">
-                                            <a href="javascript:void(0);">
-                                                <i class="fa fa-cart-plus wt-icon-box-xs"></i>
-                                            </a>
-                                            <a class="mfp-link" href="javascript:void(0);">
-                                                <i class="fa fa-heart wt-icon-box-xs"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wt-info  text-center">
-                                        <div class="p-a10 bg-white">
-                                        <h4 class="wt-title">
-                                            <a href="javascript:;">Three Martines</a>
-                                        </h4>
-                                        <span class="price">
-                                            <del>
-                                                    <span><span class="Price-currencySymbol">£</span>3.00</span>
-                                            </del> 
-                                            <ins>
-                                                <span><span class="Price-currencySymbol">£</span>2.00</span>
-                                            </ins>
-                                        </span>
-                                        <div class="rating-bx">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                        <div class="p-t10">
-                                            <button class="site-button  m-r15" type="button">ADD TO CART  <i class="fa fa-angle-double-right"></i></button>
-                                        </div>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- COLUMNS 4 -->
-                        <div class="col-md-3 col-sm-4 col-xs-6 col-xs-100pc m-b30">
-                            <div class="wt-box wt-product-box">
-                                <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
-                                    <img src="http://thewebmax.com/build/images/products/pic-4.jpg" alt="">
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon">
-                                            <a href="javascript:void(0);">
-                                                <i class="fa fa-cart-plus wt-icon-box-xs"></i>
-                                            </a>
-                                            <a class="mfp-link" href="javascript:void(0);">
-                                                <i class="fa fa-heart wt-icon-box-xs"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wt-info  text-center">
-                                        <div class="p-a10 bg-white">
-                                        <h4 class="wt-title">
-                                            <a href="javascript:;">Four Martines</a>
-                                        </h4>
-                                        <span class="price">
-                                            <del>
-                                                    <span><span class="Price-currencySymbol">£</span>3.00</span>
-                                            </del> 
-                                            <ins>
-                                                <span><span class="Price-currencySymbol">£</span>2.00</span>
-                                            </ins>
-                                        </span>
-                                        <div class="rating-bx">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                        <div class="p-t10">
-                                            <button class="site-button  m-r15" type="button">ADD TO CART  <i class="fa fa-angle-double-right"></i></button>
-                                        </div>
-                                        </div>
-                                </div>
-                            </div>
+                            </form>
                         </div>
                         
                     </div>
