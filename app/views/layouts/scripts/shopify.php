@@ -2,7 +2,7 @@
     class Shopify {
         
         # helpers 
-        protected $_countItems = '';
+        protected $_countItems = 0;
         # static helper
 		private static $_instance;
         
@@ -44,10 +44,10 @@
          * returns a number of elements stored of items
          */
         public function countItems() {
-            if (isset($_SESSION['shopping_cart'])) {
+            if (isset($_SESSION['shopify'])) {
                 // Counting items
-                if (!empty($_SESSION['shopping_cart'])) {
-                    $this->_countItems = count($_SESSION['shopping_cart'], COUNT_NORMAL);
+                if (!empty($_SESSION['shopify'])) {
+                    $this->_countItems = count($_SESSION['shopify'], COUNT_NORMAL);
                 } else {
                     $this->_countItems = 0;
                 }
@@ -64,9 +64,9 @@
             $_total = null;
             $_v = 0;
             // check session
-            if (isset($_SESSION['shopping_cart'])) {
-                for ($x = 0; $x < count($_SESSION['shopping_cart']); $x++) {
-                    $_v = $_v + ($_SESSION['shopping_cart'][$x]['price'] * $_SESSION['shopping_cart'][$x]['qtd']);
+            if (isset($_SESSION['shopify'])) {
+                for ($x = 0; $x < count($_SESSION['shopify']); $x++) {
+                    $_v = $_v + ($_SESSION['shopify'][$x]['price'] * $_SESSION['shopify'][$x]['qtd']);
                     $_total = number_format($_v, 2);
                 }
             } else {
@@ -75,4 +75,5 @@
             return $_total;
         }
 
+        public function addItem() {}
     }

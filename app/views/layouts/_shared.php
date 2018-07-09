@@ -1,30 +1,4 @@
-<?php
-  // Droping data
-  if(isset($_GET["action"])) {  
-        if($_GET["action"] == "delete")  
-        {  
-            foreach($_SESSION["shopping_cart"] as $keys => $values)  
-            {  
-                  if($values["item_id"] == $_GET["id"])  
-                  {  
-                      unset($_SESSION["shopping_cart"][$keys]);  
-                      echo '<script>alert("Item Removido")</script>';  
-                      echo '<script>window.location="'. PROOT .'"</script>';  
-                  }  
-            }  
-        }  
-  }  
-  // Data
-  $_SESSION["shopping_cart"] = array(
-    ["item_id" => 1, "name" => "Capacete DQ", "price" => 3500.00, "url" => "http://thewebmax.com/build/images/cart/pic-1.jpg", "qtd" => 2],
-    ["item_id" => 2, "name" => "Berbequim", "price" => 45000.00, "url" => "http://thewebmax.com/build/images/cart/pic-2.jpg", "qtd" => 1],
-    ["item_id" => 3, "name" => "Capacete", "price" => 2000.00, "url" => "http://thewebmax.com/build/images/cart/pic-1.jpg", "qtd" => 12],
-    ["item_id" => 4, "name" => "Berbequim ACL", "price" => 15000.00, "url" => "http://thewebmax.com/build/images/cart/pic-2.jpg", "qtd" => 8]
-  );
-  
-  // Counting stored items
-  $_count = count($_SESSION["shopping_cart"], COUNT_NORMAL);
-?>
+<?php require_once('scripts/shopify.php'); $_shopify = Shopify::getInstance(); ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -80,9 +54,9 @@
 
     </head>
     <body id="bg">
-        <!-- Wrapper -->
+
         <div class="page-wraper">
-            <!-- Header -->
+
             <header class="site-header header-style-1 ">
                 <!-- Top Bar -->
                 <div class="top-bar bg-secondry">
@@ -120,116 +94,108 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <!-- ETRA Nav -->
                             <div class="extra-nav">
-                    <div class="extra-cell">
-                        <a href="#search" class="site-search-btn"><i class="fa fa-search"></i></a>
-                    </div>
-                    <div class="extra-cell">
-                        <a href="javascript:;" class="wt-cart cart-btn" title="Seu carrinho">
-                            <span class="link-inner">
-                                <span class="woo-cart-total"> </span>
-                                <span class="woo-cart-count">
-                                    
-                                    <span class="shopping-bag wcmenucart-count "> <?=$_count?> </span>
-                                </span>
-                            </span>
-                        </a>
-                        <!-- Cart -->
-                        <div class="cart-dropdown-item-wraper clearfix">
-                            <div class="nav-cart-content">
-                                
-                                <div class="nav-cart-items p-a15">
-                                    <?php // Get stored items
-                                    for($i = 0; $i < count($_SESSION["shopping_cart"]); $i++): ?>
-                                    <div class="nav-cart-item clearfix">
-                                        <div class="nav-cart-item-image">
-                                            <a href="#"><img src="<?=$_SESSION["shopping_cart"][$i]['url']?>" alt="p-1"></a>
-                                        </div>
-                                        <div class="nav-cart-item-desc">
-                                            <a href="#"><?=$_SESSION["shopping_cart"][$i]['name']?></a>
-                                            <span class="nav-cart-item-price"><strong><?=$_SESSION["shopping_cart"][$i]['qtd']?></strong> x <?=$_SESSION["shopping_cart"][$i]['price']?> Kz</span>
-                                            <a href="index.php?action=delete&id=<?=$_SESSION["shopping_cart"][$i]['item_id']?>" class="nav-cart-item-quantity">x</a>
+                                <div class="extra-cell">
+                                    <a href="#search" class="site-search-btn"><i class="fa fa-search"></i></a>
+                                </div>
+                                <div class="extra-cell">
+                                    <a href="javascript:;" class="wt-cart cart-btn" title="Seu carrinho">
+                                        <span class="link-inner">
+                                            <span class="woo-cart-total"></span>
+                                            <span class="woo-cart-count">
+                                                <span class="shopping-bag wcmenucart-count "><?= $_shopify->countItems() ?></span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <!-- Cart -->
+                                    <div class="cart-dropdown-item-wraper clearfix">
+                                        <div class="nav-cart-content">
+                                            <div class="nav-cart-items p-a15">
+                                                <?php if (isset($_SESSION['shopify'])) { ?>
+                                                        <?php for($i = 0; $i < count($_SESSION['shopify']); $i++): ?>
+                                                            <div class="nav-cart-item clearfix">
+                                                                <div class="nav-cart-item-image">
+                                                                    <a href="#"><img src="<?=$_SESSION['shopify'][$i]['url']?>"></a>
+                                                                </div>
+                                                                <div class="nav-cart-item-desc">
+                                                                    <a href="#"><?=$_SESSION['shopify'][$i]['name']?></a>
+                                                                    <span class="nav-cart-item-price"><strong><?=$_SESSION['shopify'][$i]['qtd']?></strong> x <?=$_SESSION["shopping_cart"][$i]['price']?> Kz</span>
+                                                                    <a href="?action=delete&id=<?=$_SESSION['shopify'][$i]['item_id']?>" class="nav-cart-item-quantity">x</a>
+                                                                </div>
+                                                            </div>
+                                                        <?php endfor; ?>
+                                                <?php } else {
+                                                        echo '<div class="nav-cart-item clearfix">
+                                                                <div class="nav-cart-item-desc">
+                                                                    <span class="nav-cart-item-price"><strong>Nenhum item no carrinho.</strong></span>
+                                                                </div>
+                                                            </div>';
+                                                        }
+                                                ?>
+                                            </div>
+                                            <div class="nav-cart-title p-tb10 p-lr15 clearfix">
+                                                <h4  class="pull-left m-a0">Subtotal:</h4>
+                                                <h5 class="pull-right m-a0"><?=$_shopify->getTotal()?> KZs</h5>
+                                            </div>
+                                            <div class="nav-cart-action p-a15 clearfix">
+                                                <button class="site-button  btn-block m-b15 " type="button">Ver carrinho</button>
+                                                <button class="site-button  btn-block" type="button">Caixa de pagamento</button>
+                                            </div>
                                         </div>
                                     </div>
-                                    <?php endfor; ?>
                                 </div>
-                                <div class="nav-cart-title p-tb10 p-lr15 clearfix">
-                                    <?php // Calculate total
-                                    if (!isset($_SESSION["shopping_cart"])) {
-                                        $_SESSION['total'] = 0;
-                                    } else {
-                                        $_total = 0;
-                                        for ($x = 0; $x < count($_SESSION["shopping_cart"]); $x++) {
-                                            $_total = $_total + ($_SESSION["shopping_cart"][$x]["price"] * $_SESSION["shopping_cart"][$x]["qtd"]);
-                                            $_SESSION['total'] = number_format($_total, 2);
-                                        }
-                                    }
-                                    ?>
-                                    <h4  class="pull-left m-a0">Subtotal:</h4>
-                                    <h5 class="pull-right m-a0"><?= $_SESSION['total'] ?> KZ's</h5>
-                                </div>
-                                <div class="nav-cart-action p-a15 clearfix">
-                                    <button class="site-button  btn-block m-b15 " type="button">Ver carrinho</button>
-                                    <button class="site-button  btn-block" type="button">Caixa de pagamento</button>
-                                </div>
+                            </div>
+                            <!-- Search -->
+                            <div id="search"> 
+                                <span class="close"></span>
+                                <form role="search" id="searchform" method="get" class="radius-xl">
+                                    <div class="input-group">
+                                        <input value="" name="q" type="search" placeholder="Escreva para pesquisar"/>
+                                        <span class="input-group-btn">
+                                            <button type="button" class="search-btn">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                        </span>
+                                    </div>   
+                                </form>
+                            </div>              
+                            <div class="header-nav navbar-collapse collapse ">
+                                <ul class=" nav navbar-nav">
+                                    <li class="active">
+                                        <a href="<?=PROOT?>">Página Inicial</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Portfolio <i class="fa fa-chevron-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="<?=PROOT?>sobre">Quem Somos</a></li>
+                                            <li><a href="<?=PROOT?>galeria">Galeria</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">Produtos<i class="fa fa-chevron-down"></i></a>
+                                        <ul class="sub-menu">
+                                        <li><a href="<?=PROOT?>produtos/roloutes">Roloutes</a></li>
+                                        <li><a href="#">Divisórias</a></li>
+                                        <li><a href="#">Quiosques</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="<?=PROOT?>noticias">Notícias</a>
+                                    </li>
+                                    <li>
+                                        <a href="<?=PROOT?>contactos">Contactos</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Search -->
-                <div id="search"> 
-                <span class="close"></span>
-                <form role="search" id="searchform" method="get" class="radius-xl">
-                    <div class="input-group">
-                    <input value="" name="q" type="search" placeholder="Escreva para pesquisar"/>
-                    <span class="input-group-btn">
-                        <button type="button" class="search-btn">
-                        <i class="fa fa-search"></i>
-                        </button>
-                    </span>
-                    </div>   
-                </form>
-                </div>              
-                <div class="header-nav navbar-collapse collapse ">
-                    <ul class=" nav navbar-nav">
-                        <li class="active">
-                            <a href="<?=PROOT?>">Página Inicial</a>
-                        </li>
-                        <li>
-                            <a href="">Portfolio <i class="fa fa-chevron-down"></i></a>
-                            <ul class="sub-menu">
-                                <li><a href="<?=PROOT?>sobre">Quem Somos</a></li>
-                                <li><a href="<?=PROOT?>galeria">Galeria</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="">Produtos<i class="fa fa-chevron-down"></i></a>
-                            <ul class="sub-menu">
-                            <li><a href="<?=PROOT?>produtos/roloutes">Roloutes</a></li>
-                            <li><a href="#">Divisórias</a></li>
-                            <li><a href="#">Quiosques</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="<?=PROOT?>noticias">Notícias</a>
-                        </li>
-                        <li>
-                            <a href="<?=PROOT?>contactos">Contactos</a>
-                        </li>
-                    </ul>
-                </div>
-                        </div>
-                    </div>
-                </div>
-                
             </header>
-            <!-- HEADER END -->
+            
+            <?=$this->content('body')?>
 
-            <!-- Body content -->
-            <?= $this->content('body') ?>
         </div>
-        <!-- Footer -->
+
         <footer class="site-footer footer-dark" style="display: block; height: 1190px;">
             <div class="footer-top overlay-wraper">
                 <div class="overlay-main"></div>
@@ -271,6 +237,7 @@
                                 </div>
                             </div>
                         </div>      
+
                         <div class="col-md-3 col-sm-6">
                             <div class="widget widget_services">
                                 <h4 class="widget-title">Links Úteis</h4>
@@ -283,7 +250,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <!-- NEWSLETTER -->
+
                         <div class="col-md-3 col-sm-6">
                             <div class="widget widget_newsletter">
                                 <h4 class="widget-title">Newsletter</h4>
