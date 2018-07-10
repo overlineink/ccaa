@@ -1,4 +1,17 @@
-<?php require_once('scripts/shopify.php'); $_shopify = Shopify::getInstance(); ?>
+<?php
+ require_once('scripts/shopify.php');
+  $_shopify = Shopify::getInstance();
+  if(isset($_GET["action"])) {  
+       if($_GET["action"] == "delete") {  
+            foreach($_SESSION["shopify"] as $keys => $values) {  
+                if($values["item_id"] == $_GET["id"]) {  
+                    unset($_SESSION["shopify"][$keys]);  
+                    $_shopify->redirect('produtos/roloutes');
+                }  
+            }  
+       }  
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -111,27 +124,35 @@
                                     <div class="cart-dropdown-item-wraper clearfix">
                                         <div class="nav-cart-content">
                                             <div class="nav-cart-items p-a15">
-                                                <?php if (isset($_SESSION['shopify'])) { ?>
-                                                        <?php for($i = 0; $i < count($_SESSION['shopify']); $i++): ?>
-                                                            <div class="nav-cart-item clearfix">
-                                                                <div class="nav-cart-item-image">
-                                                                    <a href="#"><img src="<?=$_SESSION['shopify'][$i]['url']?>"></a>
-                                                                </div>
-                                                                <div class="nav-cart-item-desc">
-                                                                    <a href="#"><?=$_SESSION['shopify'][$i]['name']?></a>
-                                                                    <span class="nav-cart-item-price"><strong><?=$_SESSION['shopify'][$i]['qtd']?></strong> x <?=$_SESSION['shopify'][$i]['price']?> Kz</span>
-                                                                    <a href="?action=delete&id=<?=$_SESSION['shopify'][$i]['item_id']?>" class="nav-cart-item-quantity">x</a>
-                                                                </div>
+                                                <?php if (isset($_SESSION['shopify']) && !empty($_SESSION['shopify'])) { ?>
+                                                    <?php foreach(array_slice($_SESSION['shopify'], 0, 5) as $response): ?>
+                                                        <div class="nav-cart-item clearfix">
+                                                            <div class="nav-cart-item-image">
+                                                                <a href="#"><img src="<?=$response['url']?>"></a>
                                                             </div>
-                                                        <?php endfor; ?>
+                                                            <div class="nav-cart-item-desc">
+                                                                <a href="#"><?=$response['name']?></a>
+                                                                <span class="nav-cart-item-price"><strong><?=$response['qtd']?></strong> x <?=$response['price']?> Kz</span>
+                                                                <a href="?action=delete&id=<?=$response['item_id']?>" class="nav-cart-item-quantity">x</a>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    <?php endforeach; ?>
                                                 <?php } else {
-                                                        echo '<div class="nav-cart-item clearfix">
-                                                                <div class="nav-cart-item-desc">
-                                                                    <span class="nav-cart-item-price"><strong>Nenhum item no carrinho.</strong></span>
-                                                                </div>
-                                                            </div>';
-                                                        }
+                                                    echo '<div class="nav-cart-item clearfix">
+                                                            <div class="nav-cart-item-desc">
+                                                                <span class="nav-cart-item-price"><strong>Nenhum item no carrinho.</strong></span>
+                                                            </div>
+                                                        </div>';
+                                                    }
                                                 ?>
+                                                <?php if ($_shopify->countItems() >= 3): ?> 
+                                                    <div class="nav-cart-item clearfix">
+                                                        <div class="nav-cart-item-desc">
+                                                            <span class="nav-cart-item-price"><strong>Encontre todos os itens no carrinho.</strong></span>
+                                                        </div>
+                                                    </div>
+                                                <?php endif; ?>
                                             </div>
                                             <div class="nav-cart-title p-tb10 p-lr15 clearfix">
                                                 <h4  class="pull-left m-a0">Subtotal:</h4>

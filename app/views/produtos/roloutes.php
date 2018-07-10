@@ -125,22 +125,26 @@
                                             </h4>
                                             <span class="price">
                                                 <del>
-                                                    <span><span class="Price-currencySymbol">AOA</span> 3000.00</span>
+                                                        <span><span class="Price-currencySymbol">AOA</span> 4000.00</span>
                                                 </del> 
                                                 <ins>
                                                     <span><span class="Price-currencySymbol">AOA</span> 2500.00</span>
                                                 </ins>
                                             </span>
                                             <div class="p-t10">
-                                                <input type="hidden" name="itemId" value="0101">
+                                                <input type="hidden" name="itemId" value="0001">
                                                 <input type="hidden" name="name" value="Martines">
+                                                <input type="hidden" name="price" value="4000">
+                                                <input type="hidden" name="imagePath" value="http://thewebmax.com/build/images/products/pic-1.jpg">
+                                                <input type="hidden" name="qtd" value="1">
                                                 <button class="site-button m-r15" type="submit"><i class="fa fa-cart-plus"></i> Adicionar ao Carrinho</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </form>
-                        </div>                                   
+                        </div>
+
                     </div>
                     
                     <div class="p-b10">

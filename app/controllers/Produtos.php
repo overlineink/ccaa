@@ -22,6 +22,7 @@
                 $_name = $_POST['name'];
                 if ($_shopify->addItem($_item, $_POST['itemId'])) {
                     echo "<script> alert('{$_name} adicionado ao carrinho!'); </script>";
+                    unset($_POST);
                 } 
                 
                 //dnd($_item);

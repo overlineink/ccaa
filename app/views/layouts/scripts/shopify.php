@@ -4,7 +4,7 @@
         # helpers 
         protected $_countItems = 0;
         # static helper
-		private static $_instance;
+        private static $_instance;
         
         public function __construct( ) {
             # code here...
@@ -26,12 +26,12 @@
          * @param {INTEGER} id
          */
         public function removeItem($id) {
-            if (isset($_SESSION['shopify']) && !empty($_SESSION['shopify'])) {
+            if (isset($_SESSION['shopify'])) {
                 // start action
                 foreach ($_SESSION['shopify'] as $keys => $values) {
-                    if ($keys['itemId'] == $id) {
+                    if ($keys['item_id'] == $id) {
                         $_title = $values['title'];
-                        unset($_SESSION['shopify'][$values]);
+                        unset($_SESSION['shopify'][$keys]);
                         echo '<script>alert(' . $_title .'" Removido!")</script>';  
                         return true;
                     }
@@ -65,8 +65,8 @@
             $_v = 0;
             // check session
             if (isset($_SESSION['shopify'])) {
-                for ($x = 0; $x < count($_SESSION['shopify']); $x++) {
-                    $_v = $_v + ($_SESSION['shopify'][$x]['price'] * $_SESSION['shopify'][$x]['qtd']);
+                foreach($_SESSION['shopify'] as $response) {
+                    $_v = $_v + ($response['price'] * $response['qtd']);
                     $_total = number_format($_v, 2);
                 }
             } else {
@@ -81,13 +81,25 @@
                 $item_array_id = array_column($_SESSION['shopify'], "item_id");  
                 if(!in_array($_id, $item_array_id)) {  
                     $count = count($_SESSION['shopify']);
-                    $_SESSION['shopify'][$count] = $_params;  
+                    $_SESSION['shopify'][$count] = $_params;
+                    return true;  
                 }  
                 else {  
                     echo '<script>alert("Este item já existe no Carrinho.")</script>';  
                 }  
             } else {  
                 $_SESSION['shopify'][0] = $_params;
+                return true;
             }
         }
+
+        public function redirect($location) {
+            define ('PROOT', '/ccaa/');
+            echo '<script type="text/javascript">';
+            echo 'window.location.href="'.PROOT.$location.'";';
+            echo '</script>';
+            echo '<noscript>';
+            echo '<meta http-equiv="refresh" content="0;url='.$location.'" />';
+            echo '</noscript>';
+		}
     }
