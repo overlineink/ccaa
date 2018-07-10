@@ -184,6 +184,9 @@
                                             <div class="p-t10">
                                                 <input type="hidden" name="itemId" value="0102">
                                                 <input type="hidden" name="name" value="Martines BB">
+                                                <input type="hidden" name="name" value="Martines BB">
+                                                <input type="hidden" name="name" value="Martines BB">
+                                                <input type="hidden" name="name" value="Martines BB">
                                                 <button class="site-button m-r15" type="submit"><i class="fa fa-cart-plus"></i> Adicionar ao Carrinho</button>
                                             </div>
                                         </div>
