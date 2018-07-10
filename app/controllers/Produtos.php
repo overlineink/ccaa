@@ -8,7 +8,7 @@
         }
         
         public function roloutesAction() {
-            // requiring Shopify framework
+            // requiring Shopify API
             include_once(ROOT . '/app/views/layouts/scripts/shopify.php');
             $_shopify = Shopify::getInstance();
             if (isset($_POST) && !empty($_POST)) {
