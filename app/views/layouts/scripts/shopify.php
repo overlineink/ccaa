@@ -75,5 +75,19 @@
             return $_total;
         }
 
-        public function addItem() {}
+        public function addItem($_params, $_id) {
+            // check session exists
+            if(isset($_SESSION['shopify'])) {
+                $item_array_id = array_column($_SESSION['shopify'], "item_id");  
+                if(!in_array($_id, $item_array_id)) {  
+                    $count = count($_SESSION['shopify']);
+                    $_SESSION['shopify'][$count] = $_params;  
+                }  
+                else {  
+                    echo '<script>alert("Este item já existe no Carrinho.")</script>';  
+                }  
+            } else {  
+                $_SESSION['shopify'][0] = $_params;
+            }
+        }
     }

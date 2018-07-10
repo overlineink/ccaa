@@ -151,7 +151,7 @@
                                                             </div>
                                                             <div class="nav-cart-item-desc">
                                                                 <a href="#"><?=$_SESSION['shopify'][$i]['name']?></a>
-                                                                <span class="nav-cart-item-price"><strong><?=$_SESSION['shopify'][$i]['qtd']?></strong> x <?=$_SESSION["shopping_cart"][$i]['price']?> Kz</span>
+                                                                <span class="nav-cart-item-price"><strong><?=$_SESSION['shopify'][$i]['qtd']?></strong> x <?=$_SESSION['shopify'][$i]['price']?> Kz</span>
                                                                 <a href="?action=delete&id=<?=$_SESSION['shopify'][$i]['item_id']?>" class="nav-cart-item-quantity">x</a>
                                                             </div>
                                                         </div>

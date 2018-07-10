@@ -1,21 +1,30 @@
 <?php
     class Produtos extends Controller {
 
+        
         public function __construct($controller, $action) {
             parent::__construct($controller, $action);
             $this->load_model('_Produtos');
         }
-
+        
         public function roloutesAction() {
+            // requiring Shopify framework
+            include_once(ROOT . '/app/views/layouts/scripts/shopify.php');
+            $_shopify = Shopify::getInstance();
             if (isset($_POST) && !empty($_POST)) {
-                $_item = [
+                $_item = array (
                     "item_id" => $_POST['itemId'],
                     "name" => $_POST['name'],
                     "price" => $_POST['price'],
                     "url" => $_POST['imagePath'],
                     "qtd" => $_POST['qtd']
-                ];
-                dnd($_item);
+                );
+                $_name = $_POST['name'];
+                if ($_shopify->addItem($_item, $_POST['itemId'])) {
+                    echo "<script> alert('{$_name} adicionado ao carrinho!'); </script>";
+                } 
+                
+                //dnd($_item);
             }
             // set view title
             $this->view->setViewTitle('Roloutes - Produtos');
