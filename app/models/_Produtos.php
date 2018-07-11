@@ -17,4 +17,15 @@
             }
             return 'Something wrong! Please check your code.';
         }
+
+        public function addToCart($_item, $_id, $_name) {
+            // requiring Shopify API
+            include_once(ROOT . '/app/views/layouts/scripts/shopify.php');
+            $_shopify = Shopify::getInstance();
+            
+            if ($_shopify->addItem($_item, $_id, $_name)) {
+                unset($_POST);
+                echo "<script> alert('{$_name} adicionado ao carrinho!'); </script>";
+            } 
+        }
     }

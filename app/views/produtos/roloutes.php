@@ -112,7 +112,7 @@
                                         <img src="http://thewebmax.com/build/images/products/pic-1.jpg"/>
                                         <div class="overlay-bx">
                                             <div class="overlay-icon">
-                                                <a href="<?=PROOT?>produtos/detalhes/47/Martines">
+                                                <a href="<?=PROOT?>produtos/detalhes/0001/Martines">
                                                     <i class="fa fa-info-circle wt-icon-box-xs"></i>
                                                 </a>
                                             </div>
@@ -166,7 +166,7 @@
                                         <img src="http://thewebmax.com/build/images/products/pic-1.jpg"/>
                                         <div class="overlay-bx">
                                             <div class="overlay-icon">
-                                                <a href="<?=PROOT?>produtos/detalhes/47/Martines">
+                                                <a href="<?=PROOT?>produtos/detalhes/0002/Martines Copy">
                                                     <i class="fa fa-info-circle wt-icon-box-xs"></i>
                                                 </a>
                                             </div>
