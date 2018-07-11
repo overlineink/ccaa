@@ -113,7 +113,7 @@
                                         <div class="overlay-bx">
                                             <div class="overlay-icon">
                                                 <a href="<?=PROOT?>produtos/detalhes/47/Martines">
-                                                    <i class="fa fa-cart-plus wt-icon-box-xs"></i>
+                                                    <i class="fa fa-info-circle wt-icon-box-xs"></i>
                                                 </a>
                                             </div>
                                         </div>
@@ -167,7 +167,7 @@
                                         <div class="overlay-bx">
                                             <div class="overlay-icon">
                                                 <a href="<?=PROOT?>produtos/detalhes/47/Martines">
-                                                    <i class="fa fa-cart-plus wt-icon-box-xs"></i>
+                                                    <i class="fa fa-info-circle wt-icon-box-xs"></i>
                                                 </a>
                                             </div>
                                         </div>
