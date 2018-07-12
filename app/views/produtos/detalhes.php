@@ -66,16 +66,16 @@
                     <div class="quantity btn-quantity pull-left m-r10">
                         <div class="input-group bootstrap-touchspin">
                             <span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span>
-                            <input type="number" value="1" name="qtd" class="form-control" style="display: block;">
+                            <input type="number" value="1" id="qtd" name="qtd" class="form-control" style="display: block;">
                                 <span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span>
                             </input>
-                            <input type="hidden" name="itemId" value="0000">
-                            <input type="hidden" name="name" value="From Detail">
-                            <input type="hidden" name="price" value="1000">
-                            <input type="hidden" name="imagePath" value="http://thewebmax.com/build/images/products/pic-1.jpg">
+                            <input type="hidden" id="itemId" name="itemId" value="0000">
+                            <input type="hidden" id="name" name="name" value="From Detail">
+                            <input type="hidden" id="price" name="price" value="1000">
+                            <input type="hidden" id="url" name="imagePath" value="http://thewebmax.com/build/images/products/pic-1.jpg">
                         </div>
                     </div>
-                    <button class="btn btn-primary site-button-secondry pull-left m-r10"><i class="fa fa-shopping-bag"></i> Comprar agora</button>
+                    <button type="button" onclick="cart()" class="btn btn-primary site-button-secondry pull-left m-r10"><i class="fa fa-shopping-bag"></i> Comprar agora</button>
                     <button type="submit" class="btn btn-primary site-button pull-left"><i class="fa fa-cart-plus"></i> Adicionar ao Carrinho</button>
                 </form>
             </div>
@@ -130,3 +130,19 @@
     </div>
 </div>
 <?php $this->end(); ?>
+
+<?php $this->start('scripts'); ?>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        functions cart() {
+            const id = document.getElementById('itemId');
+            const name = document.getElementById('name');
+            const price = document.getElementById('price');
+            const url = document.getElementById('url');
+            const qtd = document.getElementById('qtd');
+            var obj = { "itemId" : id.value, "name" : name.value, "price" : price.value, "url" : url.value, "qtd" : qtd.value};
+            var myObj = JSON.stringify(obj);
+            alert(myObj);
+        }
+    </script>
+<?php $this->end(); ?> 

@@ -191,7 +191,7 @@
                                                 <h5 class="pull-right m-a0"><?=$_shopify->getTotal()?> KZs</h5>
                                             </div>
                                             <div class="nav-cart-action p-a15 clearfix">
-                                                <button class="site-button  btn-block m-b15 " type="button">Ver carrinho</button>
+                                                <button class="site-button  btn-block m-b15" onclick="document.location.href='<?=PROOT?>carrinho'" type="button">Ver carrinho</button>
                                                 <button class="site-button  btn-block" type="button">Caixa de pagamento</button>
                                             </div>
                                         </div>
